@@ -1,0 +1,77 @@
+@import 'variables';
+
+.footer-container {
+    display: grid;
+    grid-template-areas:
+    "menu go-top contact-footer"
+    "menu pay-paypal contact-footer";
+    grid-template-columns: repeat(3,fr);
+    grid-template-rows: 1fr 1fr;
+    background-color: $dark;
+
+    .menu-footer {
+        padding: 1rem 0;
+        grid-area: menu;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+
+        a {
+            color: $secondary-color;
+            padding: 3px 5px;
+            border-radius: 6px;
+            font-weight: bolder;
+
+            &:hover {
+                transition: all .5s;
+                background-color: $light;
+                font-weight: bolder;
+            }
+        }
+    }
+}
+
+.menu-footer-selected {
+    padding: 3px 5px;
+}
+
+.go-top {
+    grid-area: go-top;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+        color: $secondary-color;
+        font-weight: bolder;
+        padding: 6px;
+        border-radius: 7px;
+        
+        &:hover {
+            transition: all .4s;
+            background-color: $light;
+        }
+    }
+}
+
+.pay-paypal {
+    grid-area: pay-paypal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-footer {
+    padding: 1rem 0;
+    grid-area: contact-footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: $light;
+}
+
+#menu-footer li {
+    list-style-type: none;
+    padding-bottom: 10px;
+}

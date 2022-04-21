@@ -1,0 +1,46 @@
+@import '../base/variables';
+
+.aboutus-container {
+    display: grid;
+    grid-template-areas:
+    "aboutus-photo1 aboutus-paragraph1"
+    "aboutus-paragraph2 aboutus-photo2";
+    grid-template-columns: 40% 40%;
+    justify-content: center;
+
+    .aboutus-photo1 {
+        grid-area: aboutus-photo1;
+        margin: $standard-size;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+    .aboutus-photo2 {
+        grid-area: aboutus-photo2;
+        margin: $standard-size;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .aboutus-paragraph1 {
+        grid-area: aboutus-paragraph1;
+    }
+    
+    .aboutus-paragraph2 {
+        grid-area: aboutus-paragraph2;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;
+    }
+}
+
+.aboutus-paragraph {
+    text-align: justify;
+    margin: 2rem;
+}
+
+.standard {
+    width: 60%;
+}

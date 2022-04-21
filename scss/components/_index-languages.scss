@@ -1,0 +1,44 @@
+@import '../base/variables';
+
+.languages-title {
+    grid-area: languages-title;
+}
+
+.language-list1 {
+    grid-area: language-list1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: $standard-size;
+}
+
+.language-list2 {
+    grid-area: language-list2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: $standard-size;
+}
+
+.language-list3 {
+    grid-area: language-list3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: $standard-size;
+}
+
+#languages {
+    background-image: url(../images/network-g372f2b35e_1280.png);
+}
+
+.languagelist-title {
+    font-weight: bold;
+    padding: $standard-size;
+    color: $main-color;
+}
+
+ul li {
+    font-family: parrafos;
+    color: $light;
+}

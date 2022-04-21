@@ -1,0 +1,131 @@
+/* MEDIA QUERIES */
+
+@media screen and (max-width:768px) {
+    /*Todas las paginas */
+
+    body {
+        padding-top: 150px;
+    }
+
+    #header {
+        .navbar {
+            display: block;
+        }
+        .menu {
+            display: none;
+        }
+    }
+
+    .decreased {
+        width: 60%;
+    }
+
+    .headline {
+        background-size: cover;
+        padding: 5rem 2rem 5rem 2rem;
+    }
+
+    .footer-container {
+        display: grid;
+        grid-template-areas:
+        "menu go-top"
+        "menu pay-paypal"
+        "menu contact-footer";
+        grid-template-columns: repeat(2,fr);
+        grid-template-rows: auto auto auto;
+    }
+
+    .button {
+        padding: 0.5rem;
+        width: 60%;
+    }
+
+    /*Home Page */
+
+    .serviceslist-container-home {
+        display: grid;
+        grid-template-areas:
+        "title"
+        "translation"
+        "transcription"
+        "subtitling"
+        "viewall";
+        grid-template-rows: 0.2fr 0.4fr 0.4fr 0.4fr auto;
+        grid-template-columns: 100%;
+    }
+
+    .testimonials-container-home {
+        display: grid;
+        grid-template-areas: 
+        "testimonials-title"
+        "testimonial1"
+        "testimonial2"
+        "moreinfo-testimonials";
+        grid-template-columns: 100%;
+        grid-template-rows: auto 1fr 1fr auto;
+    }
+
+    /* About Us page */
+
+    .aboutus-container {
+        display: grid;
+        grid-template-areas:
+        "aboutus-paragraph1"
+        "aboutus-photo1"
+        "aboutus-paragraph2"
+        "aboutus-photo2";
+        grid-template-columns: 100%;
+    }
+
+    .standard {
+        width: 100%;
+    }
+
+    .location-container {
+        display: grid;
+        grid-template-areas:
+        "map"
+        "our-location";
+        grid-template-columns: 70%;
+        grid-template-rows: 1fr;
+    }
+
+    .our-location {
+        text-align: center;
+        margin: 1rem;
+    }
+}
+
+@media screen and (max-width:346px) {
+
+    /* Todas las páginas */
+
+    .footer-container {
+        display: grid;
+        grid-template-areas:
+        "menu"
+        "go-top"
+        "pay-paypal"
+        "contact-footer";
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto auto;
+    }
+    
+    h1 {
+        font-size: 25px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 19px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .standard {
+        min-width: 350px;
+    }
+}

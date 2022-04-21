@@ -1,0 +1,85 @@
+@import 'variables';
+
+#header {
+    border-bottom: 3px solid $main-color;
+    top: 0;
+    position: absolute;
+    height: auto;
+    position: sticky;
+    background-color: $light;
+    z-index: 1;
+
+    .menu {
+        display: grid;
+        grid-template-areas:
+        "logo menuitem1 menuitem2 menuitem3 menuitem4 menuitem5 menuitem6";
+        grid-template-columns: repeat(7,fr);
+        grid-template-rows: auto;
+        justify-content: space-around;
+        align-items: center;    
+    }
+
+    .navbar {
+        display: none;
+    }
+}
+
+#menuitem1 {
+    grid-area: menuitem1;
+    color: $main-color;
+}
+
+#menuitem2 {
+    grid-area: menuitem2;
+}
+
+#menuitem3 {
+    grid-area: menuitem3;
+}
+
+#menuitem4 {
+    grid-area: menuitem4;
+}
+
+#menuitem5 {
+    grid-area: menuitem5;
+}
+
+#menuitem6 {
+    grid-area: menuitem6;
+}
+
+.logo {
+    width: 100%;
+    text-align: center;
+    grid-area: logo;
+}
+
+.menu-item {
+    font-family: parrafos;
+    font-weight: bold;
+    color: $light;
+    text-align: center;
+
+    a {
+        border-radius: 6px;
+        padding: 10px;
+        
+        &:hover {
+            transition: all .5s;
+            color: $light;
+            background-color: $secondary-color;
+        }
+    }
+}
+
+.menu-item-selected {
+    font-family: parrafos;
+    font-weight: bold;
+    color: $dark;
+    text-align: center;
+}
+
+#logo {
+    width: 80%;
+}

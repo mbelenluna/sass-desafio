@@ -1,0 +1,39 @@
+@import '../base/variables';
+
+.testimonials-container-home {
+    background-color: $light;
+    text-align: center;
+    display: grid;
+    grid-template-areas: 
+    "testimonials-title testimonials-title"
+    "testimonial1 testimonial2"
+    "moreinfo-testimonials moreinfo-testimonials";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr auto;
+}
+
+.testimonials-title {
+    grid-area: testimonials-title;
+    display: flex;
+    justify-content: center;
+}
+
+#testimonial1 {
+    grid-area: testimonial1;
+}
+
+#testimonial2 {
+    grid-area: testimonial2;
+}
+
+.testimonial {
+    padding: 50px 50px 1rem 50px;
+}
+
+.moreinfo-testimonials {
+    grid-area: moreinfo-testimonials;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: $standard-size;
+}

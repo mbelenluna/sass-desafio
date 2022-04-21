@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <!-- Librería de animaciones scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>Home</title>
+</head>
+
+<body class="body-index">
+    <!-- Comienzo del header -->
+    <section id="header">
+        <header>
+            <!-- Comienzo del menú -->
+            <nav id="navegacion">
+                <div class="menu">
+                    <div class="logo">
+                        <!-- Comienzo del logo -->
+                        <a href="index.html"><img id="logo" src="../images/logo.png" alt="Rolling Translations logo"></a>
+                    </div>
+                    <!-- Fin del logo -->
+                    <div id="menuitem1" class="menu-item-selected">Home</div>
+                    <div id="menuitem2" class="menu-item"><a href="ourservices.html">Our Services</a></div>
+                    <div id="menuitem3" class="menu-item"><a href="quality.html">Quality</a></div>
+                    <div id="menuitem4" class="menu-item"><a href="testimonials.html">Testimonials</a></div>
+                    <div id="menuitem5" class="menu-item"><a href="aboutus.html">About Us</a></div>
+                    <div id="menuitem6" class="menu-item"><a href="contactus.html">Contact Us</a></div>
+                </div>
+            </nav>
+            </div>
+            <!-- Fin del menú -->
+            <!-- Comienzo del menú responsive -->
+            <nav class="navbar navbar-light bg-white fixed-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html"><img class="decreased" src="../images/logo.png" alt="Rolling Translations logo"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="../images/logo.png" alt="Rolling Translations logo"></h5>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="ourservices.html">Our Services</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="quality.html">Quality</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="testimonials.html">Testimonials</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="aboutus.html">About Us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contactus.html">Contact Us</a>
+                                </li>
+                            </ul>
+                            <form class="d-flex">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit">Search</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- Fin del menú responsive -->
+        </header>
+    </section>
+    <!-- Fin del header -->
+
+    <!-- Comienzo del título de la página -->
+    <section class="headline">
+        <div class="textheadline container">
+            <div>
+                <h1 class="title-headline darker-blue">Rolling Translations</h1>
+            </div>
+            <div class="welcome-text">
+                <p class="welcome">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis ea, autem adipisci nulla
+                    dolor sint
+                    officiis
+                    corrupti deleniti eos accusamus unde fuga fugit atque vitae consequatur. Blanditiis beatae
+                    perferendis
+                    quia.
+                </p>
+            </div>
+            <div class="button">
+                <a href="contactus.html">REQUEST A QUOTE NOW</a>
+            </div>
+        </div>
+    </section>
+    <!-- Fin del título de la página -->
+
+    <!-- Comienzo del sector de algunos servicios -->
+    <section id="services" data-aos="fade-up"
+    data-aos-duration="2000">
+        <div class="serviceslist-container-home">
+            <div class="grid-title" data-aos="fade-up"
+            data-aos-duration="2000">
+                <h2>Our Main Services</h2>
+            </div>
+            <div class="grid-translation" data-aos="fade-up"
+            data-aos-duration="2000">
+                <img class="service" src="../images/translation.webp" alt="Person translating">
+                <h3 class="service-headline">Translation</h3>
+                <p class="service-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde possimus
+                    perferendis nesciunt, corporis quidem ratione? Animi, distinctio adipisci, hic reiciendis quas quia
+                    minima, dignissimos veritatis et atque dicta harum culpa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga aliquam reprehenderit eveniet provident. Fugiat adipisci aut omnis excepturi amet voluptate consequuntur ullam nisi, reiciendis ipsa tempora eligendi, iure sapiente iusto!</p>
+            </div>
+            <div class="grid-transcription" data-aos="fade-up"
+            data-aos-duration="2000">
+                <img class="service" src="../images/transcription.jpg" alt="Person transcribing">
+                <h3 class="service-headline">Transcription</h3>
+                <p class="service-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde possimus
+                    perferendis nesciunt, corporis quidem ratione? Animi, distinctio adipisci, hic reiciendis quas quia
+                    minima, dignissimos veritatis et atque dicta harum culpa.</p>
+            </div>
+            <div class="grid-subtitling" data-aos="fade-up"
+            data-aos-duration="2000">
+                <img class="service" src="../images/tech-daily-PGuCnUzsRSM-unsplash.jpg" alt="Movies on laptop">
+                <h3 class="service-headline">Subtitling</h3>
+                <p class="service-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde possimus
+                    perferendis nesciunt, corporis quidem ratione? Animi, distinctio adipisci, hic reiciendis quas quia
+                    minima, dignissimos veritatis et atque dicta harum culpa.</p>
+            </div>
+            <div class="grid-viewall">
+                <a href="ourservices.html">View all Services</a>
+            </div>
+        </div>
+    </section>
+    <!-- Fin del sector de algunos servicios -->
+
+    <!-- Comienzo del sector de los idiomas que ofrecemos -->
+    <section id="languages">
+        <div class="languages-title">
+            <h2>Languages we handle</h2>
+        </div>
+        <div class="languages-container container">
+            <div class="row">
+                <div class="language-list1 col-12 col-sm-6 col-md-4">
+                    <p class="languagelist-title">Translation</p>
+                    <ul>
+                        <li>Spanish</li>
+                        <li>Traditional Chinese</li>
+                        <li>Simplified Chinese</li>
+                        <li>Korean</li>
+                        <li>Armenian</li>
+                        <li>Japanese</li>
+                        <li>Farsi</li>
+                        <li>Arabic</li>
+                        <li>French</li>
+                    </ul>
+                </div>
+                <div class="language-list2 col-12 col-sm-6 col-md-4">
+                    <p class="languagelist-title">Transcription</p>
+                    <ul>
+                        <li>Spanish</li>
+                        <li>Traditional Chinese</li>
+                        <li>Simplified Chinese</li>
+                        <li>Korean</li>
+                        <li>Farsi</li>
+                    </ul>
+                </div>
+                <div class="language-list3 col-12 col-sm-12 col-md-4">
+                    <p class="languagelist-title">Subtitling</p>
+                    <ul>
+                        <li>Spanish</li>
+                        <li>Traditional Chinese</li>
+                        <li>Simplified Chinese</li>
+                        <li>Korean</li>
+                        <li>Armenian</li>
+                        <li>Japanese</li>
+                        <li>Farsi</li>
+                        <li>Arabic</li>
+                        <li>French</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Fin del sector de los idiomas que ofrecemos -->
+
+    <!-- Comienzo de algunos testimonios -->
+    <section id="sometestimonials">
+        <div class="testimonials-container-home">
+            <div data-aos="fade-up" class="testimonials-title" >
+                <h2>Testimonials</h2>
+            </div>
+            <div data-aos="fade-left" id="testimonial1" class="testimonial" >
+                <p>
+                    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil voluptas doloremque quaerat vero!
+                    Consequuntur, cumque earum nobis ducimus debitis quae omnis quam nulla, similique dolores nesciunt
+                    delectus
+                    quisquam, quaerat facere."
+                    <p>Michael D.</p>
+                </p>
+            </div>
+            <div data-aos="fade-right" id="testimonial2" class="testimonial">
+                <p>
+                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, doloremque enim iste id voluptatem
+                    laudantium
+                    eos quia aliquam sequi fugiat sit? Dolorem labore amet sit similique cupiditate vero quaerat
+                    placeat!"
+                    <p>Irma R.</p>
+                </p>
+            </div>
+            <div class="moreinfo-testimonials">
+                <a href="testimonials.html#body">View all testimonials</a>
+            </div>
+        </div>
+
+    </section>
+    <!-- Fin de algunos testimonios -->
+
+    <!-- Comienzo del footer -->
+    <section id="footer">
+        <footer>
+            <!-- Comienzo del menú -->
+            <div class="footer-container">
+                <div class="menu-footer">
+                    <nav>
+                        <ul id="menu-footer">
+                            <li>
+                                <h3>Quick Links</h3>
+                            </li>
+                            <li class="menu-footer-selected">Home</li>
+                            <li><a href="ourservices.html">Our Services</a></li>
+                            <li><a href="quality.html">Quality</a></li>
+                            <li><a href="testimonials.html">Testimonials</a></li>
+                            <li><a href="aboutus.html">About Us</a></li>
+                            <li><a href="contactus.html">Contact Us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- Fin del menú -->
+                <!-- Comienzo de link útiles -->
+                <div class="go-top">
+                    <p><a href="#top">Go back to the top</a></p>
+                </div>
+                <div class="pay-paypal">
+                    <p class="button"><a href="https://www.paypal.com">PAY WITH PAYPAL</a></p>
+                </div>
+                <!-- Fin de botones útiles -->
+                <!-- Comienzo de información de contacto -->
+                <div class="contact-footer">
+                    <h3>Contact Us</h3>
+                    <p>Address 1234, State, ZIP, US</p>
+                    <p>+1 (111) 111-1111</p>
+                    <p>contact@rolltranslations.com</p>
+                </div>
+                <!-- Fin de información de contacto -->
+            </div>
+        </footer>
+    </section>
+    <!-- Fin del footer -->
+
+    <!-- Activo script para animaciones scroll -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
+
+    <!-- Activo script para bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,711 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Fuentes */
+
+@font-face {
+    font-family: parrafos;
+    src: url(../fonts/Heebo-Light.ttf);
+}
+
+@font-face {
+    font-family: titulos1;
+    src: url(../fonts/Pacifico-Regular.ttf);
+}
+
+@font-face {
+    font-family: titulos2;
+    src: url(../fonts/Pacifico-Regular.ttf);
+}
+
+@font-face {
+    font-family: titulos3;
+    src: url(../fonts/Pacifico-Regular.ttf);
+}
+
+@font-face {
+    font-family: links;
+    src: url(../fonts/Heebo-SemiBold.ttf);
+}
+
+/* Estilos de títulos y párrafos */
+
+h1 {
+    font-family: titulos1;
+    color: #1b74bc;
+    text-align: center;
+    font-size: 45px;
+}
+
+.darker-blue {
+    color: #1b74bc;
+}
+
+h2 {
+    font-family: titulos2;
+    color: #1b74bc;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+h3 {
+    font-family: titulos3;
+    color: #1b74bc;
+}
+
+p {
+    font-family: parrafos;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header (todas las páginas) */
+
+#header {
+    border-bottom: 3px solid #1b74bc;
+}
+
+.menu {
+    display: grid;
+    grid-template-areas:
+    "logo menuitem1 menuitem2 menuitem3 menuitem4 menuitem5 menuitem6";
+    grid-template-columns: repeat(7,fr);
+    grid-template-rows: auto;
+    justify-content: space-around;
+    align-items: center;    
+}
+
+.navbar {
+    display: none;
+}
+
+.logo {
+    width: 30%;
+}
+
+#menuitem1 {
+    grid-area: menuitem1;
+}
+
+#menuitem2 {
+    grid-area: menuitem2;
+}
+
+#menuitem3 {
+    grid-area: menuitem3;
+}
+
+#menuitem4 {
+    grid-area: menuitem4;
+}
+
+#menuitem5 {
+    grid-area: menuitem5;
+}
+
+#menuitem6 {
+    grid-area: menuitem6;
+}
+
+.menu-item {
+    font-family: parrafos;
+    font-weight: bold;
+    color: white;
+}
+
+.menu-item a {
+    border-radius: 6px;
+    padding: 10px;
+}
+
+.menu-item a:hover {
+    transition: all .5s;
+    color: white;
+    background-color: #1762b9;
+}
+
+.menu-item-selected {
+    font-family: parrafos;
+    font-weight: bold;
+    color: black;
+}
+
+ul li {
+    font-family: parrafos;
+    color: white;
+}
+
+#logo {
+    width: 80%;
+}
+
+#header {
+    top: 0;
+    position: absolute;
+    height: auto;
+    position: sticky;
+    background-color: white;
+    z-index: 1;
+}
+
+/* Presentación (headline) del home */
+
+.headline {
+    background-color: black;
+    background-size: cover;
+    padding: 10rem 3rem 10rem 3rem;
+}
+
+.title-headline {
+    grid-area: title-headline;
+}
+
+.welcome-text {
+    grid-area: welcome;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+
+.button {
+    font-family: links;
+    text-align: center;
+    color: #1762b9;
+    font-weight: bold;
+    font-size: larger;
+    border-style: solid;
+    color: #1b74bc;
+    border-radius: 10px;
+    grid-area: button;
+    font-size: 20px;
+    background-color: white;
+    padding: 10px 40px;
+    cursor: pointer;
+    max-width: 400px;
+}
+
+.button a {
+    color: black;
+}
+
+.button:hover {
+    background-color: #1b74bc;
+    transition: all .5s;
+}
+
+/* Lista de servicios (Main Services) */
+
+.moreinfo {
+    text-align: center;
+}
+
+.service {
+    max-width: 60%;
+    padding: 1rem 0 2rem 0;
+}
+
+.serviceslist-container-home {
+    display: grid;
+    grid-template-areas:
+    "title title"
+    "translation translation"
+    "transcription subtitling"
+    "viewall viewall";
+    width: auto;
+    grid-template-columns: 30% 30%;
+    grid-template-rows: auto auto auto auto;
+    justify-content: center;
+}
+
+.grid-title {
+    grid-area: title;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-translation {
+    grid-area: translation;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.grid-transcription {
+    grid-area: transcription;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.grid-subtitling {
+    grid-area: subtitling;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.grid-viewall {
+    grid-area: viewall;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Lista de idiomas (Languages we handle) */
+
+.languages-title {
+    grid-area: languages-title;
+}
+
+.language-list1 {
+    grid-area: language-list1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.language-list2 {
+    grid-area: language-list2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.language-list3 {
+    grid-area: language-list3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+#languages {
+    background-image: url(../images/network-g372f2b35e_1280.png);
+}
+
+.languagelist-title {
+    font-weight: bold;
+    padding: 1rem;
+    color: #1b74bc;
+}
+
+/* Sección de Testimonials */
+
+.testimonials-container-home {
+    background-color: white;
+    text-align: center;
+    display: grid;
+    grid-template-areas: 
+    "testimonials-title testimonials-title"
+    "testimonial1 testimonial2"
+    "moreinfo-testimonials moreinfo-testimonials";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr auto;
+}
+
+.testimonials-title {
+    grid-area: testimonials-title;
+    display: flex;
+    justify-content: center;
+}
+
+#testimonial1 {
+    grid-area: testimonial1;
+}
+
+#testimonial2 {
+    grid-area: testimonial2;
+}
+
+.testimonial {
+    padding: 50px 50px 1rem 50px;
+}
+
+.moreinfo-testimonials {
+    grid-area: moreinfo-testimonials;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+/* Footer (todas las páginas) */
+
+.footer-container {
+    display: grid;
+    grid-template-areas:
+    "menu go-top contact-footer"
+    "menu pay-paypal contact-footer";
+    grid-template-columns: repeat(3,fr);
+    grid-template-rows: 1fr 1fr;
+    background-color: black
+}
+
+.menu-footer {
+    padding: 1rem 0;
+    grid-area: menu;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#menu-footer a {
+    color: #1762b9;
+    padding: 3px 5px;
+    border-radius: 6px;
+    font-weight: bolder;
+}
+
+#menu-footer a:hover {
+    transition: all .5s;
+    background-color: white;
+    font-weight: bolder;
+}
+
+.menu-footer-selected {
+    padding: 3px 5px;
+}
+
+.go-top {
+    grid-area: go-top;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.go-top a {
+    color: #1762b9;
+    font-weight: bolder;
+    padding: 6px;
+    border-radius: 7px;
+}
+
+.go-top a:hover {
+    transition: all .4s;
+    background-color: white;
+}
+
+.pay-paypal {
+    grid-area: pay-paypal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-footer {
+    padding: 1rem 0;
+    grid-area: contact-footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+#menu-footer li {
+    list-style-type: none;
+    padding-bottom: 10px;
+}
+
+/* About Us page */
+
+/* Presentación (headline) de About Us */
+
+.headline-aboutus {
+    background-color: black;
+    background-size: cover;
+    padding: 5rem 3rem 5rem 3rem;
+    display: grid;
+    grid-template-areas:
+    "title-headline"
+    "welcome-text";
+}
+
+/* Body de About Us */
+
+.aboutus-container {
+    display: grid;
+    grid-template-areas:
+    "aboutus-photo1 aboutus-paragraph1"
+    "aboutus-paragraph2 aboutus-photo2";
+    grid-template-columns: 40% 40%;
+    justify-content: center;
+}
+
+.aboutus-photo1 {
+    grid-area: aboutus-photo1;
+    margin: 1rem;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.aboutus-photo2 {
+    grid-area: aboutus-photo2;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.aboutus-paragraph1 {
+    grid-area: aboutus-paragraph1;
+}
+
+.aboutus-paragraph2 {
+    grid-area: aboutus-paragraph2;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+.aboutus {
+    display: flex;
+    align-content: center;
+}
+
+.standard {
+    width: 60%;
+    max-height: 250px;
+    min-width: 300px;
+}
+
+.aboutus-paragraph {
+    text-align: justify;
+    margin: 2rem;
+}
+
+.location-container {
+    background-color: lavender;
+    display: grid;
+    grid-template-areas:
+    "map our-location";
+    grid-template-columns: 1fr 1fr;
+}
+
+.map-responsive {
+    margin: 50px;
+    grid-area: map;
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+
+.map-responsive iframe {
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+.our-location {
+    grid-area: our-location;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+/* GRID INDEX */
+
+.body-index {
+    display: grid;
+    grid-template-areas:
+    "header"
+    "headline"
+    "services"
+    "languages"
+    "sometestimonials"
+    "footer";
+}
+
+#header {
+    grid-area: header;
+}
+
+.headline {
+    grid-area: headline;
+}
+
+#services {
+    grid-area: services;
+}
+
+#languages {
+    grid-area: languages;
+}
+
+#sometestimonials {
+    grid-area: sometestimonials;
+}
+
+#footer {
+    grid-area: footer;
+}
+
+/* GRID ABOUT US */
+
+#body-aboutus {
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "headline-aboutus"
+    "body-aboutus"
+    "location"
+    "footer";
+}
+
+.headline-aboutus {
+    grid-area: headline-aboutus;
+}
+
+#body-aboutus {
+    grid-area: body-aboutus;
+}
+
+#location {
+    grid-area: location;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width:768px) {
+    /*Todas las paginas */
+    .menu {
+        display: none;
+    }
+
+    body {
+        padding-top: 150px;
+    }
+
+    .navbar {
+        display: block;
+    }
+
+    .decreased {
+        width: 60%;
+    }
+
+    .headline {
+        background-size: cover;
+        padding: 5rem 2rem 5rem 2rem;
+    }
+
+    .footer-container {
+        display: grid;
+        grid-template-areas:
+        "menu go-top"
+        "menu pay-paypal"
+        "menu contact-footer";
+        grid-template-columns: repeat(2,fr);
+        grid-template-rows: auto auto auto;
+    }
+
+    .button {
+        padding: 0.5rem;
+        width: 60%;
+    }
+
+    /*Home Page */
+
+    .serviceslist-container-home {
+        display: grid;
+        grid-template-areas:
+        "title"
+        "translation"
+        "transcription"
+        "subtitling"
+        "viewall";
+        grid-template-rows: 0.2fr 0.4fr 0.4fr 0.4fr auto;
+        grid-template-columns: 100%;
+    }
+
+    .testimonials-container-home {
+        display: grid;
+        grid-template-areas: 
+        "testimonials-title"
+        "testimonial1"
+        "testimonial2"
+        "moreinfo-testimonials";
+        grid-template-columns: 100%;
+        grid-template-rows: auto 1fr 1fr auto;
+    }
+
+    /* About Us page */
+
+    .aboutus-container {
+        display: grid;
+        grid-template-areas:
+        "aboutus-paragraph1"
+        "aboutus-photo1"
+        "aboutus-paragraph2"
+        "aboutus-photo2";
+        grid-template-columns: 100%;
+    }
+
+    .standard {
+        width: 100%;
+        max-height: 100%;
+    }
+
+    .location-container {
+        display: grid;
+        grid-template-areas:
+        "map"
+        "our-location";
+        grid-template-columns: 70%;
+        grid-template-rows: 1fr;
+    }
+
+    .our-location {
+        text-align: center;
+        margin: 1rem;
+    }
+}
+
+@media screen and (max-width:346px) {
+
+    /* Todas las páginas */
+
+    .footer-container {
+        display: grid;
+        grid-template-areas:
+        "menu"
+        "go-top"
+        "pay-paypal"
+        "contact-footer";
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto auto;
+    }
+    
+    h1 {
+        font-size: 25px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 19px;
+    }
+}

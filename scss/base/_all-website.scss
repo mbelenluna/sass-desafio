@@ -1,0 +1,63 @@
+@import 'variables';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: parrafos;
+    src: url(../fonts/Heebo-Light.ttf);
+}
+
+@font-face {
+    font-family: titulos1;
+    src: url(../fonts/Pacifico-Regular.ttf);
+}
+
+@font-face {
+    font-family: titulos2;
+    src: url(../fonts/Pacifico-Regular.ttf);
+}
+
+@font-face {
+    font-family: titulos3;
+    src: url(../fonts/Pacifico-Regular.ttf);
+}
+
+@font-face {
+    font-family: links;
+    src: url(../fonts/Heebo-SemiBold.ttf);
+}
+
+h1 {
+    font-family: titulos1;
+    color: $main-color;
+    text-align: center;
+    font-size: 45px;
+}
+
+.darker-blue {
+    color: $main-color;
+}
+
+h2 {
+    font-family: titulos2;
+    color: $main-color;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+h3 {
+    font-family: titulos3;
+    color: $main-color;
+}
+
+p {
+    font-family: parrafos;
+}
+
+a {
+    text-decoration: none;
+}

@@ -1,0 +1,34 @@
+@import '../base/variables';
+
+.location-container {
+    background-color: $third-color;
+    display: grid;
+    grid-template-areas:
+    "map our-location";
+    grid-template-columns: 1fr 1fr;
+
+    .map-responsive {
+        margin: 50px;
+        grid-area: map;
+        overflow:hidden;
+        padding-bottom:56.25%;
+        position:relative;
+        height:0;
+
+        iframe {
+            left:0;
+            top:0;
+            height:100%;
+            width:100%;
+            position:absolute;
+        }
+    }
+    
+    .our-location {
+        grid-area: our-location;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+    }
+}

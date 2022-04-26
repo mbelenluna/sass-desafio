@@ -1,0 +1,9 @@
+.headline-testimonials {
+    background-color: $dark;
+    background-size: cover;
+    padding: 5rem 3rem;
+    display: grid;
+    grid-template-areas:
+    "title-headline"
+    "welcome-text";
+}

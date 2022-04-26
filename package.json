@@ -294,5 +294,13 @@
     "yargs": "^17.4.1",
     "xdg-basedir": "^4.0.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mbelenluna/sass-desafio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mbelenluna/sass-desafio/issues"
+  },
+  "homepage": "https://github.com/mbelenluna/sass-desafio#readme",
   "description": ""
 }

@@ -94,6 +94,53 @@
         text-align: center;
         margin: 1rem;
     }
+
+    /* Our Services page */
+
+    .serviceslist-container {
+        display: grid;
+        grid-template-areas:
+        "service-gtranslation"
+        "service-ltranslation"
+        "service-mtranslation"
+        "service-subtitling"
+        "service-transcription"
+        "service-website";
+        grid-template-columns: auto;
+    }
+
+    .service {
+        width: 90%;
+        margin: 1rem;
+        max-width: 450px;
+    }
+
+    /* Testimonials page */ 
+
+    .testimonial {
+        padding: 1rem;
+    }
+
+    .testimonials-container {
+        grid-template-columns: 100%;
+    }
+
+    /* Contact Us page */
+
+    #contact {
+        font-family: parrafos;
+        display: grid;
+        grid-template-areas:
+        "title-form"
+        "form "
+        "description-quote";
+        grid-template-columns: 100%;
+        justify-content: center;
+    }
+
+    .description-quote {
+        margin: 2rem;
+    } 
 }
 
 @media screen and (max-width:346px) {
@@ -128,4 +175,175 @@
     .standard {
         min-width: 350px;
     }
+}
+
+@media screen and (max-width:992px) {
+    #menuitem1 {
+        margin: 2px;
+    }
+    
+    #menuitem2 {
+        margin: 2px;
+    }
+    
+    #menuitem3 {
+        margin: 2px;
+    }
+    
+    #menuitem4 {
+        margin: 2px;
+    }
+    
+    #menuitem5 {
+        margin: 2px;
+    }
+    
+    #menuitem6 {
+        margin: 2px;
+    }
+}
+
+/* Grids */
+
+/* GRID INDEX */
+
+.body-index {
+    display: grid;
+    grid-template-areas:
+    "header"
+    "headline"
+    "services"
+    "languages"
+    "sometestimonials"
+    "footer";
+}
+
+#header {
+    grid-area: header;
+}
+
+.headline {
+    grid-area: headline;
+}
+
+#services {
+    grid-area: services;
+}
+
+#languages {
+    grid-area: languages;
+}
+
+#sometestimonials {
+    grid-area: sometestimonials;
+}
+
+#footer {
+    grid-area: footer;
+}
+
+/* GRID ABOUT US */
+
+#body-aboutus {
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "headline-aboutus"
+    "body-aboutus"
+    "location"
+    "footer";
+}
+
+.headline-aboutus {
+    grid-area: headline-aboutus;
+}
+
+#body-aboutus {
+    grid-area: body-aboutus;
+}
+
+#location {
+    grid-area: location;
+}
+
+/* GRID CONTACT US */
+
+.body-contactus {
+    display: grid;
+    grid-template-areas:
+    "header"
+    "headline-contactus"
+    "contact"
+    "footer";
+}
+
+.headline-contactus {
+    grid-area: headline-contactus;
+}
+
+#contact {
+    grid-area: contact;
+}
+
+/* GRID OUR SERVICES */
+
+.body-ourservices {
+    display: grid;
+    grid-template-areas:
+    "header"
+    "headline-ourservices"
+    "services"
+    "footer";
+}
+
+.headline-ourservices {
+    grid-area: headline-ourservices;
+}
+
+
+/* GRID QUALITY */
+
+.body-quality {
+    display: grid;
+    grid-template-areas:
+    "header"
+    "headline-quality"
+    "body-ourprocess"
+    "footer";
+}
+
+.headline-quality {
+    grid-area: headline-quality;
+}
+
+#body-ourprocess {
+    grid-area: body-ourprocess;
+    margin: 0;
+}
+
+
+/* GRID TESTIMONIALS */
+
+.body-testimonials {
+    display: grid;
+    grid-template-areas:
+    "header"
+    "headline-testimonials"
+    "body-testimonialspage"
+    "clients-logos"
+    "footer";
+}
+
+.headline-testimonials {
+    grid-area: headline-testimonials;
+}
+
+#body-testimonialspage {
+    grid-area: body-testimonialspage;
+}
+
+.clients-logos {
+    grid-area: clients-logos;
+    padding-bottom: 1rem;
+    background-color: white;
 }

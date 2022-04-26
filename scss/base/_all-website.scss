@@ -30,6 +30,11 @@
     src: url(../fonts/Heebo-SemiBold.ttf);
 }
 
+@font-face {
+    font-family: testimonials;
+    src: url(../../fonts/BIZUDPMincho-Regular.ttf);
+}
+
 h1 {
     font-family: titulos1;
     color: $main-color;

@@ -1,0 +1,49 @@
+
+.testimonials-container {
+    text-align: center;
+    display: grid;
+    grid-template-areas: 
+    "test-1"
+    "test-2"
+    "test-3"
+    "test-4";
+    grid-template-columns: 60%;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+}
+
+#test-1 {
+    grid-area: test-1;
+}
+
+#test-2 {
+    grid-area: test-2;
+}
+
+#test-3 {
+    grid-area: test-3;
+}
+
+#test-4 {
+    grid-area: test-4;
+}
+
+.client-logo {
+    width: 10%;
+}
+
+#carouselExampleSlidesOnly {
+    height: 223px;
+    width: 226px;
+}
+
+.our-clients {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+.testimonial {
+    font-family: testimonials;
+}

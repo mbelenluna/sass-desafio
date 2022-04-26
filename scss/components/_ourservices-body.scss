@@ -1,0 +1,108 @@
+.service-description {
+    margin: 2rem;
+    text-align: justify;
+}
+
+.service-pic {
+    max-width: 95%;
+    padding: 1rem 0 2rem 0;
+}
+
+.enlarged {
+    transition: all 1s;
+}
+
+.enlarged:hover {
+    transform: scale(1.1);
+}
+
+.serviceslist-container {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.titleservice {
+    margin: 1rem;
+    text-align: center;
+    justify-content: center;
+}
+
+.service-pic-gt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-pic-lt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-pic-s {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-pic-t {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-pic-wl {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-pic-mt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-gtranslation {
+    padding: 0;
+    text-align: justify;
+    display: flex;
+    justify-content: start;
+}
+
+.service-ltranslation {
+    margin: 1rem;
+    text-align: justify;
+    display: flex;
+    justify-content: end;
+}
+
+.service-subtitling {
+    margin: 1rem;
+    text-align: justify;
+    display: flex;
+    justify-content: start;
+}
+
+.service-transcription {
+    margin: 1rem;
+    text-align: justify;
+    display: flex;
+    justify-content: end;
+}
+
+.service-website {
+    margin: 1rem;
+    text-align: justify;
+    display: flex;
+    justify-content: start;
+}
+
+.service-mtranslation {
+    margin: 1rem;
+    text-align: justify;
+    display: flex;
+    justify-content: end;
+}

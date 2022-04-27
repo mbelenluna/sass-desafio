@@ -646,8 +646,6 @@ ul li {
 
   /* Contact Us page */
   #contact {
-    font-family: parrafos;
-    display: grid;
     grid-template-areas: "title-form" "form" "description-quote" !important;
     grid-template-columns: 100% !important;
     justify-content: center !important;

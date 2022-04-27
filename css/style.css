@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+.disclaimer {
+  display: none;
+}
+
 html, body {
   overflow-x: hidden;
 }
@@ -102,7 +106,6 @@ a {
 #menuitem1 {
   grid-area: menuitem1;
   margin: 1rem;
-  padding: 10px;
 }
 
 #menuitem2 {
@@ -157,6 +160,7 @@ a {
   font-weight: bold;
   color: black;
   text-align: center;
+  padding: 10px;
 }
 
 #logo {
@@ -510,7 +514,7 @@ ul li {
     grid-template-columns: 40% 40%;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   /*Todas las paginas */
   body {
     padding-top: 150px;
@@ -599,6 +603,36 @@ ul li {
     width: 90%;
     margin: 1rem;
     max-width: 450px;
+  }
+
+  .service-gtranslation {
+    border: 1px gray solid;
+    border-radius: 4px;
+  }
+
+  .service-ltranslation {
+    border: 1px gray solid;
+    border-radius: 4px;
+  }
+
+  .service-subtitling {
+    border: 1px gray solid;
+    border-radius: 4px;
+  }
+
+  .service-transcription {
+    border: 1px gray solid;
+    border-radius: 4px;
+  }
+
+  .service-website {
+    border: 1px gray solid;
+    border-radius: 4px;
+  }
+
+  .service-mtranslation {
+    border: 1px gray solid;
+    border-radius: 4px;
   }
 
   /* Testimonials page */
@@ -948,8 +982,6 @@ ul li {
   margin: 1rem;
   display: flex;
   justify-content: start;
-  border: 1px gray solid;
-  border-radius: 4px;
 }
 
 .service-ltranslation {
@@ -958,8 +990,6 @@ ul li {
   margin: 1rem;
   display: flex;
   justify-content: end;
-  border: 1px gray solid;
-  border-radius: 4px;
 }
 
 .service-subtitling {
@@ -968,8 +998,6 @@ ul li {
   margin: 1rem;
   display: flex;
   justify-content: start;
-  border: 1px gray solid;
-  border-radius: 4px;
 }
 
 .service-transcription {
@@ -978,8 +1006,6 @@ ul li {
   margin: 1rem;
   display: flex;
   justify-content: end;
-  border: 1px gray solid;
-  border-radius: 4px;
 }
 
 .service-website {
@@ -988,8 +1014,6 @@ ul li {
   margin: 1rem;
   display: flex;
   justify-content: start;
-  border: 1px gray solid;
-  border-radius: 4px;
 }
 
 .service-mtranslation {
@@ -998,8 +1022,6 @@ ul li {
   margin: 1rem;
   display: flex;
   justify-content: end;
-  border: 1px gray solid;
-  border-radius: 4px;
 }
 
 .headline-quality {

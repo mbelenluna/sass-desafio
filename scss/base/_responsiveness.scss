@@ -17,7 +17,7 @@
         }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
     /*Todas las paginas */
 
     body {
@@ -130,6 +130,36 @@
         width: 90%;
         margin: 1rem;
         max-width: 450px;
+    }
+
+    .service-gtranslation {
+        border: 1px gray solid;
+        border-radius: 4px;
+    }
+
+    .service-ltranslation {
+        border: 1px gray solid;
+        border-radius: 4px;
+    }
+    
+    .service-subtitling {
+        border: 1px gray solid;
+        border-radius: 4px;
+    }
+    
+    .service-transcription {
+        border: 1px gray solid;
+        border-radius: 4px;
+    }
+    
+    .service-website {
+        border: 1px gray solid;
+        border-radius: 4px;
+    }
+    
+    .service-mtranslation {
+        border: 1px gray solid;
+        border-radius: 4px;
     }
 
     /* Testimonials page */ 

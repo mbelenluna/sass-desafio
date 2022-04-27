@@ -31,7 +31,6 @@
 #menuitem1 {
     grid-area: menuitem1;
     margin: 1rem;
-    padding: 10px;
 }
 
 #menuitem2 {
@@ -88,6 +87,7 @@
     font-weight: bold;
     color: $dark;
     text-align: center;
+    padding: 10px;
 }
 
 #logo {

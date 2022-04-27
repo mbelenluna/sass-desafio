@@ -618,6 +618,7 @@ ul li {
     display: grid;
     grid-template-areas: "title-form" "form" "description-quote" !important;
     grid-template-columns: 100% !important;
+    justify-content: center;
   }
 
   .description-quote {
@@ -644,7 +645,8 @@ ul li {
   h3 {
     font-size: 19px;
   }
-
+}
+@media screen and (max-width: 393px) {
   /* Contact Us */
   .form-row textarea {
     min-height: 50px !important;
@@ -661,7 +663,7 @@ ul li {
   }
 
   .contact-form {
-    margin: 2rem !important;
+    margin: 1rem !important;
   }
 
   #file {

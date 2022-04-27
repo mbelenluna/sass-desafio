@@ -13,3 +13,5 @@ $asunto = 'New Submission from Contact Us';
 mail($para, $asunto, utf8_decode($mensaje));
 
 header('Location:exito.html')
+
+?>

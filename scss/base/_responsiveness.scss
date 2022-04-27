@@ -164,6 +164,7 @@
         "form"
         "description-quote" !important;
         grid-template-columns: 100% !important;
+        justify-content: center;
     }
 
     .description-quote {
@@ -197,7 +198,9 @@
     h3 {
         font-size: 19px;
     }
+}
 
+@media screen and (max-width:393px) {
     /* Contact Us */
 
     .form-row textarea {

@@ -126,18 +126,6 @@
 
     /* Our Services page */
 
-    .serviceslist-container {
-        display: grid;
-        grid-template-areas:
-        "service-gtranslation"
-        "service-ltranslation"
-        "service-mtranslation"
-        "service-subtitling"
-        "service-transcription"
-        "service-website";
-        grid-template-columns: auto;
-    }
-
     .service {
         width: 90%;
         margin: 1rem;
@@ -164,11 +152,12 @@
         "form"
         "description-quote" !important;
         grid-template-columns: 100% !important;
-        justify-content: center;
+        justify-content: center !important;
     }
 
     .description-quote {
         margin: 2rem;
+        padding-right: 0 !important;
     } 
 }
 
@@ -218,7 +207,7 @@
     }
 
     .contact-form {
-        margin: 1rem !important;
+        margin: 2rem !important;
     }
 
     #file {
@@ -227,7 +216,7 @@
     }
 
     .form-submission {
-        font-size: 11px;
+        font-size: 12px;
     }
 }
 

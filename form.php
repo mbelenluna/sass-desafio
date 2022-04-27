@@ -12,6 +12,6 @@
 
     mail($para, $asunto, utf8_decode($mensaje));
 
-    header('Location:exito.html');
+    header('Location:success.html');
 
 ?>

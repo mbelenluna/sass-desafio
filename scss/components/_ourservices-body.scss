@@ -56,34 +56,46 @@
     @include alignment(justify, 0, 1rem);
     display: flex;
     justify-content: start;
+    border: 1px gray solid;
+    border-radius: 4px;
 }
 
 .service-ltranslation {
     @include alignment(justify, 0, 1rem);
     display: flex;
     justify-content: end;
+    border: 1px gray solid;
+    border-radius: 4px;
 }
 
 .service-subtitling {
     @include alignment(justify, 0, 1rem);
     display: flex;
     justify-content: start;
+    border: 1px gray solid;
+    border-radius: 4px;
 }
 
 .service-transcription {
     @include alignment(justify, 0, 1rem);
     display: flex;
     justify-content: end;
+    border: 1px gray solid;
+    border-radius: 4px;
 }
 
 .service-website {
     @include alignment(justify, 0, 1rem);
     display: flex;
     justify-content: start;
+    border: 1px gray solid;
+    border-radius: 4px;
 }
 
 .service-mtranslation {
     @include alignment(justify, 0, 1rem);
     display: flex;
     justify-content: end;
+    border: 1px gray solid;
+    border-radius: 4px;
 }

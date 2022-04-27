@@ -1,5 +1,20 @@
 /* MEDIA QUERIES */
 
+@media screen and (max-width:1041px) {
+        /*Home Page */
+
+        .serviceslist-container-home {
+            display: grid;
+            grid-template-areas:
+            "title title"
+            "translation translation"
+            "transcription subtitling"
+            "viewall viewall";
+            grid-template-rows: repeat(4,auto);
+            grid-template-columns: 40% 40%;
+        }
+}
+
 @media screen and (max-width:768px) {
     /*Todas las paginas */
 
@@ -63,6 +78,18 @@
         "moreinfo-testimonials";
         grid-template-columns: 100%;
         grid-template-rows: auto 1fr 1fr auto;
+    }
+
+    .grid-translation {
+        margin: 1rem 0;
+    }
+
+    .grid-transcription {
+        margin: 1rem 0;
+    }
+
+    .grid-subtitling {
+        margin: 1rem 0;
     }
 
     /* About Us page */

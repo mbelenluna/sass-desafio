@@ -3,13 +3,12 @@
 .serviceslist-container-home {
     display: grid;
     grid-template-areas:
-    "title title"
-    "translation translation"
-    "transcription subtitling"
-    "viewall viewall";
+    "title title title"
+    "translation transcription subtitling"
+    "viewall viewall viewall";
     width: auto;
-    grid-template-columns: 30% 30%;
-    grid-template-rows: auto auto auto auto;
+    grid-template-columns: repeat(3,fr);
+    grid-template-rows: auto;
     justify-content: center;
 }
 
@@ -28,6 +27,8 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-right: 2rem;
+    margin-left: 2rem;
 }
 
 .grid-transcription {
@@ -37,6 +38,8 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-right: 2rem;
+    margin-left: 2rem;
 }
 
 .grid-subtitling {
@@ -46,6 +49,8 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-right: 2rem;
+    margin-left: 2rem;
 }
 
 .grid-viewall {
@@ -53,6 +58,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 1rem;
 }
 
 .moreinfo {

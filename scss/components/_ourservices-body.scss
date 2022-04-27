@@ -1,6 +1,9 @@
+@import '../base/variables';
+@import '../base/mixins';
+@import '../base/maps';
+
 .service-description {
-    margin: 2rem;
-    text-align: justify;
+    @include alignment(center, 0, 2rem)
 }
 
 .service-pic {
@@ -18,91 +21,69 @@
 
 .serviceslist-container {
     width: 100%;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
+    background-color: $light;
 }
 
 .titleservice {
-    margin: 1rem;
-    text-align: center;
-    justify-content: center;
+    @include alignment(center, 0, 1rem)
 }
 
 .service-pic-gt {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend %flex;
 }
 
 .service-pic-lt {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend %flex;
 }
 
 .service-pic-s {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend %flex;
 }
 
 .service-pic-t {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend %flex;
 }
 
 .service-pic-wl {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend %flex;
 }
 
 .service-pic-mt {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend %flex;
 }
 
 .service-gtranslation {
-    padding: 0;
-    text-align: justify;
+    @include alignment(justify, 0, 1rem);
     display: flex;
     justify-content: start;
 }
 
 .service-ltranslation {
-    margin: 1rem;
-    text-align: justify;
+    @include alignment(justify, 0, 1rem);
     display: flex;
     justify-content: end;
 }
 
 .service-subtitling {
-    margin: 1rem;
-    text-align: justify;
+    @include alignment(justify, 0, 1rem);
     display: flex;
     justify-content: start;
 }
 
 .service-transcription {
-    margin: 1rem;
-    text-align: justify;
+    @include alignment(justify, 0, 1rem);
     display: flex;
     justify-content: end;
 }
 
 .service-website {
-    margin: 1rem;
-    text-align: justify;
+    @include alignment(justify, 0, 1rem);
     display: flex;
     justify-content: start;
 }
 
 .service-mtranslation {
-    margin: 1rem;
-    text-align: justify;
+    @include alignment(justify, 0, 1rem);
     display: flex;
     justify-content: end;
 }

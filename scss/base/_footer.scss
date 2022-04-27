@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'extends';
 
 .footer-container {
     display: grid;
@@ -12,9 +13,7 @@
     .menu-footer {
         padding: 1rem 0;
         grid-area: menu;
-        display: flex;
-        justify-content: center;
-        align-content: center;
+        @extend %flex;
 
         a {
             color: $secondary-color;
@@ -37,9 +36,7 @@
 
 .go-top {
     grid-area: go-top;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %flex;
 
     a {
         color: $secondary-color;
@@ -56,17 +53,13 @@
 
 .pay-paypal {
     grid-area: pay-paypal;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %flex;
 }
 
 .contact-footer {
     padding: 1rem 0;
     grid-area: contact-footer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %flex;
     flex-direction: column;
     color: $light;
 }

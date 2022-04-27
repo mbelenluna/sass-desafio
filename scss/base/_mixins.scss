@@ -1,0 +1,5 @@
+@mixin alignment($align, $padding, $margin) {
+    text-align: $align;
+    padding: $padding;
+    margin: $margin;
+}

@@ -1,3 +1,6 @@
+@import '../base/variables';
+@import '../base/maps';
+@import '../base/extends';
 
 .testimonials-container {
     text-align: center;
@@ -5,8 +8,10 @@
     grid-template-areas: 
     "test-1"
     "test-2"
+    "image1"
     "test-3"
-    "test-4";
+    "test-4"
+    "image2";
     grid-template-columns: 60%;
     grid-template-rows: 1fr 1fr;
     justify-content: center;
@@ -46,4 +51,19 @@
 
 .testimonial {
     font-family: testimonials;
+    margin: map-get($testimonial, margin-testimonial);
+    color: map-get($testimonial, color-testimonial);
+    padding: map-get($testimonial, padding-testimonial);
+}
+
+.image-testimonial {
+    width: 40%;
+}
+
+.image-testimonial1 {
+    grid-area: image1;
+}
+
+.image-testimonial2 {
+    grid-area: image2;
 }

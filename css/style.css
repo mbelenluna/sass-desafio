@@ -52,6 +52,17 @@ h3 {
   color: #1b74bc;
 }
 
+h4 {
+  font-family: parrafos;
+  color: #1b74bc;
+}
+
+h5 {
+  font-family: parrafos;
+  color: #1b74bc;
+  font-weight: bolder;
+}
+
 p {
   font-family: parrafos;
 }
@@ -148,6 +159,12 @@ a {
   width: 80%;
 }
 
+.service-pic-mt, .service-pic-wl, .service-pic-t, .service-pic-s, .service-pic-lt, .service-pic-gt, .contact-footer, .pay-paypal, .go-top, .footer-container .menu-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .footer-container {
   display: grid;
   grid-template-areas: "menu go-top contact-footer" "menu pay-paypal contact-footer";
@@ -158,9 +175,6 @@ a {
 .footer-container .menu-footer {
   padding: 1rem 0;
   grid-area: menu;
-  display: flex;
-  justify-content: center;
-  align-content: center;
 }
 .footer-container .menu-footer a {
   color: #1762b9;
@@ -180,9 +194,6 @@ a {
 
 .go-top {
   grid-area: go-top;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .go-top a {
   color: #1762b9;
@@ -197,17 +208,11 @@ a {
 
 .pay-paypal {
   grid-area: pay-paypal;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .contact-footer {
   padding: 1rem 0;
   grid-area: contact-footer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
   color: white;
 }
@@ -218,7 +223,7 @@ a {
 }
 
 .headline {
-  background-color: black;
+  background: url(../../images/banner.jpg);
   background-size: cover;
   padding: 10rem 3rem;
 }
@@ -267,10 +272,10 @@ a {
 
 .serviceslist-container-home {
   display: grid;
-  grid-template-areas: "title title" "translation translation" "transcription subtitling" "viewall viewall";
+  grid-template-areas: "title title title" "translation transcription subtitling" "viewall viewall viewall";
   width: auto;
-  grid-template-columns: 30% 30%;
-  grid-template-rows: auto auto auto auto;
+  grid-template-columns: repeat(3, fr);
+  grid-template-rows: auto;
   justify-content: center;
 }
 
@@ -289,6 +294,8 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-right: 2rem;
+  margin-left: 2rem;
 }
 
 .grid-transcription {
@@ -298,6 +305,8 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-right: 2rem;
+  margin-left: 2rem;
 }
 
 .grid-subtitling {
@@ -307,6 +316,8 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-right: 2rem;
+  margin-left: 2rem;
 }
 
 .grid-viewall {
@@ -314,6 +325,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 1rem;
 }
 
 .moreinfo {
@@ -358,7 +370,7 @@ a {
 }
 
 #languages {
-  background-image: url(../images/network-g372f2b35e_1280.png);
+  background-color: black;
 }
 
 .languagelist-title {
@@ -485,6 +497,15 @@ ul li {
 }
 
 /* MEDIA QUERIES */
+@media screen and (max-width: 1041px) {
+  /*Home Page */
+  .serviceslist-container-home {
+    display: grid;
+    grid-template-areas: "title title" "translation translation" "transcription subtitling" "viewall viewall";
+    grid-template-rows: repeat(4, auto);
+    grid-template-columns: 40% 40%;
+  }
+}
 @media screen and (max-width: 768px) {
   /*Todas las paginas */
   body {
@@ -532,6 +553,18 @@ ul li {
     grid-template-areas: "testimonials-title" "testimonial1" "testimonial2" "moreinfo-testimonials";
     grid-template-columns: 100%;
     grid-template-rows: auto 1fr 1fr auto;
+  }
+
+  .grid-translation {
+    margin: 1rem 0;
+  }
+
+  .grid-transcription {
+    margin: 1rem 0;
+  }
+
+  .grid-subtitling {
+    margin: 1rem 0;
   }
 
   /* About Us page */
@@ -857,8 +890,9 @@ ul li {
 }
 
 .service-description {
+  text-align: center;
+  padding: 0;
   margin: 2rem;
-  text-align: justify;
 }
 
 .service-pic {
@@ -876,91 +910,59 @@ ul li {
 
 .serviceslist-container {
   width: 100%;
-  justify-content: center;
-  align-items: center;
   background-color: white;
 }
 
 .titleservice {
-  margin: 1rem;
   text-align: center;
-  justify-content: center;
-}
-
-.service-pic-gt {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.service-pic-lt {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.service-pic-s {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.service-pic-t {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.service-pic-wl {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.service-pic-mt {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 0;
+  margin: 1rem;
 }
 
 .service-gtranslation {
-  padding: 0;
   text-align: justify;
+  padding: 0;
+  margin: 1rem;
   display: flex;
   justify-content: start;
 }
 
 .service-ltranslation {
-  margin: 1rem;
   text-align: justify;
+  padding: 0;
+  margin: 1rem;
   display: flex;
   justify-content: end;
 }
 
 .service-subtitling {
-  margin: 1rem;
   text-align: justify;
+  padding: 0;
+  margin: 1rem;
   display: flex;
   justify-content: start;
 }
 
 .service-transcription {
-  margin: 1rem;
   text-align: justify;
+  padding: 0;
+  margin: 1rem;
   display: flex;
   justify-content: end;
 }
 
 .service-website {
-  margin: 1rem;
   text-align: justify;
+  padding: 0;
+  margin: 1rem;
   display: flex;
   justify-content: start;
 }
 
 .service-mtranslation {
-  margin: 1rem;
   text-align: justify;
+  padding: 0;
+  margin: 1rem;
   display: flex;
   justify-content: end;
 }
@@ -1017,10 +1019,16 @@ ul li {
   grid-template-areas: "title-headline" "welcome-text";
 }
 
+.footer-container .menu-footer, .go-top, .pay-paypal, .contact-footer, .service-pic-gt, .service-pic-lt, .service-pic-s, .service-pic-t, .service-pic-wl, .service-pic-mt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .testimonials-container {
   text-align: center;
   display: grid;
-  grid-template-areas: "test-1" "test-2" "test-3" "test-4";
+  grid-template-areas: "test-1" "test-2" "image1" "test-3" "test-4" "image2";
   grid-template-columns: 60%;
   grid-template-rows: 1fr 1fr;
   justify-content: center;
@@ -1060,6 +1068,27 @@ ul li {
 
 .testimonial {
   font-family: testimonials;
+  margin: 1px;
+  color: black;
+  padding: 1rem;
+}
+
+.image-testimonial {
+  width: 40%;
+}
+
+.image-testimonial1 {
+  grid-area: image1;
+}
+
+.image-testimonial2 {
+  grid-area: image2;
+}
+
+.footer-container .menu-footer, .go-top, .pay-paypal, .contact-footer, .service-pic-gt, .service-pic-lt, .service-pic-s, .service-pic-t, .service-pic-wl, .service-pic-mt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */

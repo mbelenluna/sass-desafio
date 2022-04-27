@@ -653,6 +653,10 @@ ul li {
     justify-content: center !important;
   }
 
+  .contact-form {
+    margin: 1rem !important;
+  }
+
   .description-quote {
     margin: 2rem;
     padding-right: 0 !important;

@@ -1,3 +1,5 @@
+@import 'variables';
+
 /* MEDIA QUERIES */
 
 @media screen and (max-width:1041px) {
@@ -159,10 +161,9 @@
         display: grid;
         grid-template-areas:
         "title-form"
-        "form "
-        "description-quote";
-        grid-template-columns: 100%;
-        justify-content: center;
+        "form"
+        "description-quote" !important;
+        grid-template-columns: 100% !important;
     }
 
     .description-quote {
@@ -196,11 +197,34 @@
     h3 {
         font-size: 19px;
     }
-}
 
-@media screen and (min-width:768px) {
-    .standard {
-        min-width: 350px;
+    /* Contact Us */
+
+    .form-row textarea {
+        min-height: 50px !important;
+        min-width: 100% !important;
+    }
+
+    .form-row {
+        min-height: 50px !important;
+        min-width: 100% !important;
+    }
+
+    .form {
+        width: 100% !important;
+    }
+
+    .contact-form {
+        margin: 2rem !important;
+    }
+
+    #file {
+        word-wrap: break-word;
+        font-size: xx-small;
+    }
+
+    .form-submission {
+        font-size: 11px;
     }
 }
 
@@ -372,5 +396,5 @@
 .clients-logos {
     grid-area: clients-logos;
     padding-bottom: 1rem;
-    background-color: white;
+    background-color: $light;
 }

@@ -616,9 +616,8 @@ ul li {
   #contact {
     font-family: parrafos;
     display: grid;
-    grid-template-areas: "title-form" "form " "description-quote";
-    grid-template-columns: 100%;
-    justify-content: center;
+    grid-template-areas: "title-form" "form" "description-quote" !important;
+    grid-template-columns: 100% !important;
   }
 
   .description-quote {
@@ -645,10 +644,33 @@ ul li {
   h3 {
     font-size: 19px;
   }
-}
-@media screen and (min-width: 768px) {
-  .standard {
-    min-width: 350px;
+
+  /* Contact Us */
+  .form-row textarea {
+    min-height: 50px !important;
+    min-width: 100% !important;
+  }
+
+  .form-row {
+    min-height: 50px !important;
+    min-width: 100% !important;
+  }
+
+  .form {
+    width: 100% !important;
+  }
+
+  .contact-form {
+    margin: 2rem !important;
+  }
+
+  #file {
+    word-wrap: break-word;
+    font-size: xx-small;
+  }
+
+  .form-submission {
+    font-size: 11px;
   }
 }
 @media screen and (max-width: 992px) {

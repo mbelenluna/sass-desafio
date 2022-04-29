@@ -133,62 +133,64 @@
         </div>
         <div class="form-submission">
             <!-- Formulario -->
-            <form action="form.php" method="post" class="contact-form">
-                <div class="form-row">
-                    <label for="full-name">Full name:</label>
-                    <input type="text" id="full-name" placeholder="e.g., John Doe" name="nombre" required>
-                </div>
-                <div class="form-row">
-                    <label for="email">Email address:</label>
-                    <input type="text" id="email" placeholder="e.g., hello@live.com" name="email" required>
-                </div>
-                <div class="form-row">
-                    <label for="phone-number">Phone number:</label>
-                    <input type="text" id="phone-number" placeholder="+1 (111) 111-1111" name="telefono">
-                </div>
-                <fieldset class="service-requested">
-                    <legend>Service(s) needed</legend>
-                    <input type="checkbox" name="traduccion" id="translation">
-                    <label for="translation" class="checkbox-label">Translation</label>
+            <main>
+                <form action="form.php" method="post" class="contact-form">
+                    <div class="form-row">
+                        <label for="fullname">Full name:</label>
+                        <input type="text" id="fullname" placeholder="e.g., John Doe" name="fullname" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="email">Email address:</label>
+                        <input type="text" id="email" placeholder="e.g., hello@live.com" name="email" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="phonenumber">Phone number:</label>
+                        <input type="text" id="phonenumber" placeholder="+1 (111) 111-1111" name="phonenumber">
+                    </div>
+                    <fieldset class="service-requested">
+                        <legend>Service(s) needed</legend>
+                        <input type="checkbox" name="traduccion" id="translation">
+                        <label for="translation" class="checkbox-label">Translation</label>
 
-                    <input type="checkbox" name="proofreading" id="proofreading">
-                    <label for="proofreading" class="checkbox-label">Proofreading</label>
+                        <input type="checkbox" name="proofreading" id="proofreading">
+                        <label for="proofreading" class="checkbox-label">Proofreading</label>
 
-                    <input type="checkbox" name="subtitulado" id="subtitling">
-                    <label for="subtitling" class="checkbox-label">Subtitling</label>
+                        <input type="checkbox" name="subtitulado" id="subtitling">
+                        <label for="subtitling" class="checkbox-label">Subtitling</label>
 
-                    <input type="checkbox" name="transcripcion" id="transcription">
-                    <label for="transcription" class="checkbox-label">Transcription</label>
+                        <input type="checkbox" name="transcripcion" id="transcription">
+                        <label for="transcription" class="checkbox-label">Transcription</label>
 
-                    <input type="checkbox" name="dtp" id="website-localization">
-                    <label for="website-localization" class="checkbox-label">Website Localization</label>
-                </fieldset>
+                        <input type="checkbox" name="dtp" id="website-localization">
+                        <label for="website-localization" class="checkbox-label">Website Localization</label>
+                    </fieldset>
 
-                <div class="form-row">
-                    <label for="source-language">Source language(s):</label>
-                    <textarea name="sourcelanguage" id="source-language"></textarea>
-                </div>
+                    <div class="form-row">
+                        <label for="sourcelanguage">Source language(s):</label>
+                        <textarea name="sourcelanguage" id="sourcelanguage"></textarea>
+                    </div>
 
-                <div class="form-row">
-                    <label for="targetlanguage">Target language(s):</label>
-                    <textarea name="target-language" id="target-language"></textarea>
-                </div>
+                    <div class="form-row">
+                        <label for="targetlanguage">Target language(s):</label>
+                        <textarea name="targetlanguage" id="targetlanguage"></textarea>
+                    </div>
 
-                <div class="upload-file">
-                    <label for="file">Please select your document:</label>
-                    <input type="file" id="file" name="file">
-                </div>
+                    <div class="upload-file">
+                        <label for="file">Please select your document:</label>
+                        <input type="file" id="file" name="file">
+                    </div>
 
-                <div class="form-row">
-                    <label for="source-language">Message:</label>
-                    <textarea name="message" id="message"></textarea>
-                </div>
+                    <div class="form-row">
+                        <label for="message">Message:</label>
+                        <textarea name="message" id="message"></textarea>
+                    </div>
 
-                <div class="form-row">
-                    <button type="submit">Submit</button>
-                </div>
+                    <div class="form-row">
+                        <button type="submit">Submit</button>
+                    </div>
 
-            </form>
+                </form>
+            </main>
         </div>
         <div class="description-quote">
             <p>

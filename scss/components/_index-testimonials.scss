@@ -1,4 +1,5 @@
 @import '../base/variables';
+@import '../base/extends';
 
 .testimonials-container-home {
     background-color: $light;
@@ -10,30 +11,29 @@
     "moreinfo-testimonials moreinfo-testimonials";
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto 1fr auto;
+
+    .testimonials-title {
+        grid-area: testimonials-title;
+        display: flex;
+        justify-content: center;
+    }
+
+    #testimonial1 {
+        grid-area: testimonial1;
+    }
+    
+    #testimonial2 {
+        grid-area: testimonial2;
+    }
+    
+    .testimonial {
+        padding: $standard-size;
+    }
+    
+    .moreinfo-testimonials {
+        grid-area: moreinfo-testimonials;
+        @extend %flex;
+        padding: $standard-size;
+    }
 }
 
-.testimonials-title {
-    grid-area: testimonials-title;
-    display: flex;
-    justify-content: center;
-}
-
-#testimonial1 {
-    grid-area: testimonial1;
-}
-
-#testimonial2 {
-    grid-area: testimonial2;
-}
-
-.testimonial {
-    padding: 50px 50px 1rem 50px;
-}
-
-.moreinfo-testimonials {
-    grid-area: moreinfo-testimonials;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    padding: $standard-size;
-}

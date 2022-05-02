@@ -1,5 +1,5 @@
 @import '../base/variables';
-
+@import '../base/extends';
 .headline {
     background: url(../../images/banner.jpg);
     background-size: cover;
@@ -18,10 +18,8 @@
 }
 
 .textheadline {
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @extend %flex;
 }
 
 .button {

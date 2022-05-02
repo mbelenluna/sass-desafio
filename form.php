@@ -14,12 +14,12 @@ if (isset($_POST['submit'])) {
     $para = 'rolltranslations@gmail.com';
     $asunto = 'New Submission from Contact Us';
     $header = "From: ".$email;
-    $txt = "You have received an email from ".$fullname".\n\n".$email"\n".$phonenumber"\n".$servicerequested"\n".$sourcelanguage"\n"$targetlanguage"\n".$file"\n".$message;
+    $txt = "You have received an email from ".$fullname.$email.$phonenumber.$servicerequested.$sourcelanguage.$targetlanguage.$file.$message;
 
 
     mail($para, $asunto, $txt, $header);
 
-    header('Location: success.html');
+    header('Location:success.html');
 
 }
 

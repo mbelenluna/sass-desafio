@@ -167,7 +167,7 @@ a {
   width: 80%;
 }
 
-.service-pic-mt, .service-pic-wl, .service-pic-t, .service-pic-s, .service-pic-lt, .service-pic-gt, .contact-footer, .pay-paypal, .go-top, .footer-container .menu-footer {
+#body-ourprocess .quality-container .image-ourprocess, .serviceslist-container .service-pic-mt, .serviceslist-container .service-pic-wl, .serviceslist-container .service-pic-t, .serviceslist-container .service-pic-s, .serviceslist-container .service-pic-lt, .serviceslist-container .service-pic-gt, .location-container .our-location, .testimonials-container-home .moreinfo-testimonials, .serviceslist-container-home .grid-viewall, .serviceslist-container-home .grid-subtitling, .serviceslist-container-home .grid-transcription, .serviceslist-container-home .grid-translation, .serviceslist-container-home .grid-title, .textheadline, .contact-footer, .pay-paypal, .go-top, .footer-container .menu-footer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -230,6 +230,12 @@ a {
   padding-bottom: 10px;
 }
 
+#body-ourprocess .quality-container .image-ourprocess, .serviceslist-container .service-pic-mt, .serviceslist-container .service-pic-wl, .serviceslist-container .service-pic-t, .serviceslist-container .service-pic-s, .serviceslist-container .service-pic-lt, .serviceslist-container .service-pic-gt, .location-container .our-location, .testimonials-container-home .moreinfo-testimonials, .serviceslist-container-home .grid-viewall, .serviceslist-container-home .grid-subtitling, .serviceslist-container-home .grid-transcription, .serviceslist-container-home .grid-translation, .serviceslist-container-home .grid-title, .textheadline, .footer-container .menu-footer, .go-top, .pay-paypal, .contact-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .headline {
   background: url(../../images/banner.jpg);
   background-size: cover;
@@ -248,10 +254,7 @@ a {
 }
 
 .textheadline {
-  display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .button {
@@ -278,6 +281,12 @@ a {
   transition: all 0.5s;
 }
 
+#body-ourprocess .quality-container .image-ourprocess, .serviceslist-container .service-pic-mt, .serviceslist-container .service-pic-wl, .serviceslist-container .service-pic-t, .serviceslist-container .service-pic-s, .serviceslist-container .service-pic-lt, .serviceslist-container .service-pic-gt, .location-container .our-location, .testimonials-container-home .moreinfo-testimonials, .serviceslist-container-home .grid-viewall, .serviceslist-container-home .grid-subtitling, .serviceslist-container-home .grid-transcription, .serviceslist-container-home .grid-translation, .serviceslist-container-home .grid-title, .footer-container .menu-footer, .go-top, .pay-paypal, .contact-footer, .textheadline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .serviceslist-container-home {
   display: grid;
   grid-template-areas: "title title title" "translation transcription subtitling" "viewall viewall viewall";
@@ -286,90 +295,58 @@ a {
   grid-template-rows: auto;
   justify-content: center;
 }
-
-.grid-title {
+.serviceslist-container-home .grid-title {
   grid-area: title;
-  background-color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
-
-.grid-translation {
+.serviceslist-container-home .grid-translation {
   grid-area: translation;
-  background-color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
   margin-right: 2rem;
   margin-left: 2rem;
 }
-
-.grid-transcription {
+.serviceslist-container-home .grid-transcription {
   grid-area: transcription;
-  background-color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
   margin-right: 2rem;
   margin-left: 2rem;
 }
-
-.grid-subtitling {
+.serviceslist-container-home .grid-subtitling {
   grid-area: subtitling;
-  background-color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
   margin-right: 2rem;
   margin-left: 2rem;
 }
-
-.grid-viewall {
+.serviceslist-container-home .grid-viewall {
   grid-area: viewall;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin: 1rem;
 }
 
-.moreinfo {
-  text-align: center;
+#languages {
+  background-color: black;
 }
-
-.service {
-  max-width: 60%;
-  padding: 1rem 0;
-}
-
-.service-description {
-  margin: 1rem;
-}
-
-.languages-title {
+#languages .languages-title {
   grid-area: languages-title;
 }
-
-.language-list1 {
+#languages .languagelist-title {
+  font-weight: bold;
+  padding: 1rem;
+  color: #1b74bc;
+}
+#languages .language-list1 {
   grid-area: language-list1;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 1rem;
 }
-
-.language-list2 {
+#languages .language-list2 {
   grid-area: language-list2;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 1rem;
 }
-
-.language-list3 {
+#languages .language-list3 {
   grid-area: language-list3;
   display: flex;
   flex-direction: column;
@@ -377,19 +354,15 @@ a {
   padding: 1rem;
 }
 
-#languages {
-  background-color: black;
-}
-
-.languagelist-title {
-  font-weight: bold;
-  padding: 1rem;
-  color: #1b74bc;
-}
-
 ul li {
   font-family: parrafos;
   color: white;
+}
+
+#body-ourprocess .quality-container .image-ourprocess, .serviceslist-container .service-pic-mt, .serviceslist-container .service-pic-wl, .serviceslist-container .service-pic-t, .serviceslist-container .service-pic-s, .serviceslist-container .service-pic-lt, .serviceslist-container .service-pic-gt, .location-container .our-location, .testimonials-container-home .moreinfo-testimonials, .footer-container .menu-footer, .go-top, .pay-paypal, .contact-footer, .textheadline, .serviceslist-container-home .grid-title, .serviceslist-container-home .grid-translation, .serviceslist-container-home .grid-transcription, .serviceslist-container-home .grid-subtitling, .serviceslist-container-home .grid-viewall {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .testimonials-container-home {
@@ -400,30 +373,22 @@ ul li {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto 1fr auto;
 }
-
-.testimonials-title {
+.testimonials-container-home .testimonials-title {
   grid-area: testimonials-title;
   display: flex;
   justify-content: center;
 }
-
-#testimonial1 {
+.testimonials-container-home #testimonial1 {
   grid-area: testimonial1;
 }
-
-#testimonial2 {
+.testimonials-container-home #testimonial2 {
   grid-area: testimonial2;
 }
-
-.testimonial {
-  padding: 50px 50px 1rem 50px;
+.testimonials-container-home .testimonial {
+  padding: 1rem;
 }
-
-.moreinfo-testimonials {
+.testimonials-container-home .moreinfo-testimonials {
   grid-area: moreinfo-testimonials;
-  display: flex;
-  align-content: center;
-  justify-content: center;
   padding: 1rem;
 }
 
@@ -448,6 +413,10 @@ ul li {
   justify-content: end;
   align-items: center;
 }
+.aboutus-container .aboutus-paragraph {
+  text-align: justify;
+  margin: 2rem;
+}
 .aboutus-container .aboutus-photo2 {
   grid-area: aboutus-photo2;
   margin: 1rem;
@@ -465,13 +434,7 @@ ul li {
   justify-content: end;
   align-items: center;
 }
-
-.aboutus-paragraph {
-  text-align: justify;
-  margin: 2rem;
-}
-
-.standard {
+.aboutus-container .standard {
   width: 60%;
 }
 
@@ -479,7 +442,7 @@ ul li {
   background-color: lavender;
   display: grid;
   grid-template-areas: "map our-location";
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 70% 30%;
 }
 .location-container .map-responsive {
   margin: 50px;
@@ -498,9 +461,6 @@ ul li {
 }
 .location-container .our-location {
   grid-area: our-location;
-  display: flex;
-  justify-content: center;
-  align-content: center;
   flex-direction: column;
 }
 
@@ -589,7 +549,7 @@ ul li {
   .location-container {
     display: grid;
     grid-template-areas: "map" "our-location";
-    grid-template-columns: 70%;
+    grid-template-columns: 100%;
     grid-template-rows: 1fr;
   }
 
@@ -846,86 +806,12 @@ ul li {
 .headline-contactus {
   background-image: url(../images/damian-zaleski-RYyr-k3Ysqg-unsplash.jpg);
   background-size: cover;
-  padding: 10rem 3rem 10rem 3rem;
+  padding: 10rem 3rem;
 }
-
-.welcome-text-black {
+.headline-contactus .welcome-text-black {
   color: black;
   font-weight: bolder;
   text-align: center;
-}
-
-.contact-form {
-  background-color: lightcyan;
-  width: 80%;
-  margin: 3rem;
-  grid-area: form;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.form-row {
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  flex-wrap: wrap;
-  padding: 0.5rem 0 0.5rem 0;
-  min-width: 100%;
-}
-
-.form-row input[type=text] {
-  font-size: 14px;
-  border: 1px solid gray;
-  min-height: 30px;
-}
-
-.form-row textarea {
-  resize: none;
-  border: 1px solid gray;
-  min-height: 50px;
-  min-width: 200px;
-}
-
-.form-row button {
-  font-size: 20px;
-  font-weight: bold;
-  color: turquoise;
-  background-color: black;
-  padding: 10px 40px;
-  cursor: pointer;
-  max-width: 200px;
-}
-
-.form-row button:hover {
-  background-color: #1c84c9;
-}
-
-.form-row button:active {
-  background-color: white;
-}
-
-.title-form {
-  grid-area: title-form;
-  text-align: center;
-  margin: 2rem;
-  border-radius: 3px;
-  border: 1px solid gray;
-  padding: 25px;
-}
-
-.location {
-  text-align: center;
-  margin: 2rem;
-}
-
-.description-quote {
-  grid-area: description-quote;
-  text-align: justify;
-  padding-right: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
 }
 
 #contact {
@@ -935,102 +821,153 @@ ul li {
   grid-template-columns: 60% 30%;
   justify-content: center;
 }
-
-.image-contactus {
+#contact .title-form {
+  grid-area: title-form;
+  text-align: center;
+  margin: 2rem;
+  border-radius: 3px;
+  border: 1px solid lavender;
+  padding: 25px;
+}
+#contact .contact-form {
+  background-color: lavender;
+  width: 80%;
+  margin: 3rem;
+  grid-area: form;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+#contact .contact-form .form-row {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 0.5rem 0 0.5rem 0;
+  min-width: 100%;
+}
+#contact .contact-form .form-row input[type=text] {
+  font-size: 14px;
+  border: 1px solid #1762b9;
+  min-height: 30px;
+}
+#contact .contact-form .form-row textarea {
+  resize: none;
+  border: 1px solid #1762b9;
+  min-height: 50px;
+  min-width: 200px;
+}
+#contact .contact-form .form-row button {
+  font-size: 20px;
+  font-weight: bold;
+  color: #1762b9;
+  background-color: black;
+  padding: 10px 40px;
+  cursor: pointer;
+  max-width: 200px;
+}
+#contact .contact-form .form-row button:hover {
+  background-color: lavender;
+}
+#contact .contact-form .form-row button:active {
+  background-color: white;
+}
+#contact .description-quote {
+  grid-area: description-quote;
+  text-align: justify;
+  padding-right: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+#contact .description-quote .location {
+  text-align: center;
+  margin: 2rem;
+}
+#contact .description-quote .image-contactus {
   width: 100%;
 }
 
 .headline-ourservices {
   background-color: black;
   background-size: cover;
-  padding: 5rem 3rem 5rem 3rem;
+  padding: 5rem 3rem;
   display: grid;
   grid-template-areas: "title-headline" "welcome-text";
-}
-
-.service-description {
-  text-align: center;
-  padding: 0;
-  margin: 2rem;
-}
-
-.service-pic {
-  max-width: 95%;
-  padding: 1rem 0 2rem 0;
-}
-
-.enlarged {
-  transition: all 1s;
-}
-
-.enlarged:hover {
-  transform: scale(1.1);
 }
 
 .serviceslist-container {
   width: 100%;
   background-color: white;
 }
-
-.titleservice {
+.serviceslist-container .service-gtranslation {
+  text-align: justify;
+  padding: 0;
+  margin: 1rem;
+  display: flex;
+  justify-content: start;
+}
+.serviceslist-container .service-ltranslation {
+  text-align: justify;
+  padding: 0;
+  margin: 1rem;
+  display: flex;
+  justify-content: end;
+}
+.serviceslist-container .service-subtitling {
+  text-align: justify;
+  padding: 0;
+  margin: 1rem;
+  display: flex;
+  justify-content: start;
+}
+.serviceslist-container .service-transcription {
+  text-align: justify;
+  padding: 0;
+  margin: 1rem;
+  display: flex;
+  justify-content: end;
+}
+.serviceslist-container .service-website {
+  text-align: justify;
+  padding: 0;
+  margin: 1rem;
+  display: flex;
+  justify-content: start;
+}
+.serviceslist-container .service-mtranslation {
+  text-align: justify;
+  padding: 0;
+  margin: 1rem;
+  display: flex;
+  justify-content: end;
+}
+.serviceslist-container .service-pic {
+  max-width: 95%;
+  padding: 1rem 0 2rem 0;
+}
+.serviceslist-container .enlarged {
+  transition: all 1s;
+}
+.serviceslist-container .enlarged:hover {
+  transform: scale(1.1);
+}
+.serviceslist-container .titleservice {
   text-align: center;
   padding: 0;
   margin: 1rem;
 }
-
-.service-gtranslation {
-  text-align: justify;
-  padding: 0;
-  margin: 1rem;
-  display: flex;
-  justify-content: start;
-}
-
-.service-ltranslation {
-  text-align: justify;
-  padding: 0;
-  margin: 1rem;
-  display: flex;
-  justify-content: end;
-}
-
-.service-subtitling {
-  text-align: justify;
-  padding: 0;
-  margin: 1rem;
-  display: flex;
-  justify-content: start;
-}
-
-.service-transcription {
-  text-align: justify;
-  padding: 0;
-  margin: 1rem;
-  display: flex;
-  justify-content: end;
-}
-
-.service-website {
-  text-align: justify;
-  padding: 0;
-  margin: 1rem;
-  display: flex;
-  justify-content: start;
-}
-
-.service-mtranslation {
-  text-align: justify;
-  padding: 0;
-  margin: 1rem;
-  display: flex;
-  justify-content: end;
-}
-
 .headline-quality {
   background-color: black;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 5rem 3rem;
+}
+
+#body-ourprocess .quality-container .image-ourprocess, .footer-container .menu-footer, .go-top, .pay-paypal, .contact-footer, .textheadline, .serviceslist-container-home .grid-title, .serviceslist-container-home .grid-translation, .serviceslist-container-home .grid-transcription, .serviceslist-container-home .grid-subtitling, .serviceslist-container-home .grid-viewall, .testimonials-container-home .moreinfo-testimonials, .location-container .our-location, .serviceslist-container .service-pic-gt, .serviceslist-container .service-pic-lt, .serviceslist-container .service-pic-s, .serviceslist-container .service-pic-t, .serviceslist-container .service-pic-wl, .serviceslist-container .service-pic-mt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #body-ourprocess {
@@ -1041,33 +978,21 @@ ul li {
   grid-template-columns: 70%;
   justify-content: center;
 }
-
-.ourprocess-title {
+#body-ourprocess .quality-container {
+  background-color: white;
+}
+#body-ourprocess .quality-container .ourprocess-title {
   grid-area: ourprocess-title;
 }
-
-.ourprocess {
+#body-ourprocess .quality-container .ourprocess {
   grid-area: ourprocess;
 }
-
-.steps {
+#body-ourprocess .quality-container .steps {
   grid-area: steps;
 }
-
-.image-ourprocess {
+#body-ourprocess .quality-container .image-ourprocess {
   grid-area: image-ourprocess;
   width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.quality-img {
-  width: 100%;
-  padding-bottom: 2rem;
-}
-
-.quality-container {
-  background-color: white;
 }
 
 .headline-testimonials {
@@ -1078,7 +1003,7 @@ ul li {
   grid-template-areas: "title-headline" "welcome-text";
 }
 
-.footer-container .menu-footer, .go-top, .pay-paypal, .contact-footer, .service-pic-gt, .service-pic-lt, .service-pic-s, .service-pic-t, .service-pic-wl, .service-pic-mt {
+.footer-container .menu-footer, .go-top, .pay-paypal, .contact-footer, .textheadline, .serviceslist-container-home .grid-title, .serviceslist-container-home .grid-translation, .serviceslist-container-home .grid-transcription, .serviceslist-container-home .grid-subtitling, .serviceslist-container-home .grid-viewall, .testimonials-container-home .moreinfo-testimonials, .location-container .our-location, .serviceslist-container .service-pic-gt, .serviceslist-container .service-pic-lt, .serviceslist-container .service-pic-s, .serviceslist-container .service-pic-t, .serviceslist-container .service-pic-wl, .serviceslist-container .service-pic-mt, #body-ourprocess .quality-container .image-ourprocess {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1092,30 +1017,32 @@ ul li {
   grid-template-rows: 1fr 1fr;
   justify-content: center;
 }
-
-#test-1 {
+.testimonials-container #test-1 {
   grid-area: test-1;
 }
-
-#test-2 {
+.testimonials-container #test-2 {
   grid-area: test-2;
 }
-
-#test-3 {
+.testimonials-container #test-3 {
   grid-area: test-3;
 }
-
-#test-4 {
+.testimonials-container #test-4 {
   grid-area: test-4;
 }
-
-.client-logo {
-  width: 10%;
+.testimonials-container .testimonial {
+  font-family: testimonials;
+  margin: 1px;
+  color: black;
+  padding: 1rem;
 }
-
-#carouselExampleSlidesOnly {
-  height: 223px;
-  width: 226px;
+.testimonials-container .image-testimonial {
+  width: 40%;
+}
+.testimonials-container .image-testimonial1 {
+  grid-area: image1;
+}
+.testimonials-container .image-testimonial2 {
+  grid-area: image2;
 }
 
 .our-clients {
@@ -1124,27 +1051,12 @@ ul li {
   flex-direction: row;
   align-items: center;
 }
-
-.testimonial {
-  font-family: testimonials;
-  margin: 1px;
-  color: black;
-  padding: 1rem;
+.our-clients #carouselExampleSlidesOnly {
+  height: 223px;
+  width: 226px;
 }
 
-.image-testimonial {
-  width: 40%;
-}
-
-.image-testimonial1 {
-  grid-area: image1;
-}
-
-.image-testimonial2 {
-  grid-area: image2;
-}
-
-.footer-container .menu-footer, .go-top, .pay-paypal, .contact-footer, .service-pic-gt, .service-pic-lt, .service-pic-s, .service-pic-t, .service-pic-wl, .service-pic-mt {
+.footer-container .menu-footer, .go-top, .pay-paypal, .contact-footer, .textheadline, .serviceslist-container-home .grid-title, .serviceslist-container-home .grid-translation, .serviceslist-container-home .grid-transcription, .serviceslist-container-home .grid-subtitling, .serviceslist-container-home .grid-viewall, .testimonials-container-home .moreinfo-testimonials, .location-container .our-location, .serviceslist-container .service-pic-gt, .serviceslist-container .service-pic-lt, .serviceslist-container .service-pic-s, .serviceslist-container .service-pic-t, .serviceslist-container .service-pic-wl, .serviceslist-container .service-pic-mt, #body-ourprocess .quality-container .image-ourprocess {
   display: flex;
   justify-content: center;
   align-items: center;

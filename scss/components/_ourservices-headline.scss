@@ -1,7 +1,9 @@
+@import '../base/variables';
+
 .headline-ourservices {
     background-color: $dark;
     background-size: cover;
-    padding: 5rem 3rem 5rem 3rem;
+    padding: 5rem 3rem;
     display: grid;
     grid-template-areas:
     "title-headline"

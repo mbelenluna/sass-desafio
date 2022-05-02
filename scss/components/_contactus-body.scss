@@ -1,75 +1,4 @@
-.contact-form {
-    background-color: lightcyan;
-    width: 80%;
-    margin: 3rem;
-    grid-area: form;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.form-row {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    flex-wrap: wrap;
-    padding: 0.5rem 0 0.5rem 0;
-    min-width: 100%;
-}
-
-.form-row input[type="text"] {
-    font-size: 14px;
-    border: 1px solid gray;
-    min-height: 30px;
-}
-
-.form-row textarea {
-    resize: none;
-    border: 1px solid gray;
-    min-height: 50px;
-    min-width: 200px;
-}
-
-.form-row button {
-    font-size: 20px;
-    font-weight: bold;
-    color: turquoise;
-    background-color: black;
-    padding: 10px 40px;
-    cursor: pointer;
-    max-width: 200px;
-}
-
-.form-row button:hover {
-    background-color: #1c84c9;
-}
-
-.form-row button:active {
-    background-color: white;
-}
-
-.title-form {
-    grid-area: title-form;
-    text-align: center;
-    margin: 2rem;
-    border-radius: 3px;
-    border: 1px solid gray;
-    padding: 25px;
-}
-
-.location {
-    text-align: center;
-    margin: 2rem;
-}
-
-.description-quote {
-    grid-area: description-quote;
-    text-align: justify;
-    padding-right: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-}
+@import '../base/variables';
 
 #contact {
     font-family: parrafos;
@@ -80,8 +9,84 @@
     "form description-quote";
     grid-template-columns: 60% 30%;
     justify-content: center;
+
+    .title-form {
+        grid-area: title-form;
+        text-align: center;
+        margin: 2rem;
+        border-radius: 3px;
+        border: 1px solid $third-color;
+        padding: 25px;
+    }
+    
+    .contact-form {
+    background-color: $third-color;
+    width: 80%;
+    margin: 3rem;
+    grid-area: form;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+        .form-row {
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            flex-wrap: wrap;
+            padding: 0.5rem 0 0.5rem 0;
+            min-width: 100%;
+        }
+
+        .form-row input[type="text"] {
+            font-size: 14px;
+            border: 1px solid $secondary-color;
+            min-height: 30px;
+        }
+
+        .form-row textarea {
+            resize: none;
+            border: 1px solid $secondary-color;
+            min-height: 50px;
+            min-width: 200px;
+        }
+
+        .form-row button {
+            font-size: 20px;
+            font-weight: bold;
+            color: $secondary-color;
+            background-color: $dark;
+            padding: 10px 40px;
+            cursor: pointer;
+            max-width: 200px;
+
+            &:hover {
+                background-color: $third-color;
+            }
+
+            &:active {
+                background-color: $light;
+            }
+        }
+    }
+    
+    .description-quote {
+        grid-area: description-quote;
+        text-align: justify;
+        padding-right: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    
+        .location {
+            text-align: center;
+            margin: 2rem;
+        }
+    
+        .image-contactus {
+            width: 100%;
+        }
+    }
 }
 
-.image-contactus {
-    width: 100%;
-}
+
+

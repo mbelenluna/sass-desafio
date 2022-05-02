@@ -15,6 +15,12 @@
         justify-content: end;
         align-items: center;
     }
+
+    .aboutus-paragraph {
+        text-align: justify;
+        margin: 2rem;
+    }
+
     .aboutus-photo2 {
         grid-area: aboutus-photo2;
         margin: $standard-size;
@@ -34,13 +40,9 @@
         justify-content: end;
         align-items: center;
     }
+
+    .standard {
+        width: 60%;
+    }
 }
 
-.aboutus-paragraph {
-    text-align: justify;
-    margin: 2rem;
-}
-
-.standard {
-    width: 60%;
-}

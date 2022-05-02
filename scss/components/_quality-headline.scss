@@ -1,5 +1,7 @@
+@import '../base/variables';
+
 .headline-quality {
-    background-color: black;
+    background-color: $dark;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 5rem 3rem;

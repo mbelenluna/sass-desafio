@@ -2,88 +2,90 @@
 @import '../base/mixins';
 @import '../base/maps';
 
-.service-description {
-    @include alignment(center, 0, 2rem)
-}
 
-.service-pic {
-    max-width: 95%;
-    padding: 1rem 0 2rem 0;
-}
-
-.enlarged {
-    transition: all 1s;
-}
-
-.enlarged:hover {
-    transform: scale(1.1);
-}
 
 .serviceslist-container {
     width: 100%;
     background-color: $light;
+
+    .service-gtranslation {
+        @include alignment(justify, 0, 1rem);
+        display: flex;
+        justify-content: start;
+    }
+    
+    .service-ltranslation {
+        @include alignment(justify, 0, 1rem);
+        display: flex;
+        justify-content: end;
+    }
+    
+    .service-subtitling {
+        @include alignment(justify, 0, 1rem);
+        display: flex;
+        justify-content: start;
+    }
+    
+    .service-transcription {
+        @include alignment(justify, 0, 1rem);
+        display: flex;
+        justify-content: end;
+    }
+    
+    .service-website {
+        @include alignment(justify, 0, 1rem);
+        display: flex;
+        justify-content: start;
+    }
+    
+    .service-mtranslation {
+        @include alignment(justify, 0, 1rem);
+        display: flex;
+        justify-content: end;
+    }
+
+    .service-pic {
+        max-width: 95%;
+        padding: $standard-size 0 2rem 0;
+    }
+    
+    .enlarged {
+        transition: all 1s;
+    
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    .titleservice {
+        @include alignment(center, 0, 1rem)
+    }
+    
+    .service-pic-gt {
+        @extend %flex;
+    }
+    
+    .service-pic-lt {
+        @extend %flex;
+    }
+    
+    .service-pic-s {
+        @extend %flex;
+    }
+    
+    .service-pic-t {
+        @extend %flex;
+    }
+    
+    .service-pic-wl {
+        @extend %flex;
+    }
+    
+    .service-pic-mt {
+        @extend %flex;
+    }
 }
 
-.titleservice {
-    @include alignment(center, 0, 1rem)
-}
 
-.service-pic-gt {
-    @extend %flex;
-}
 
-.service-pic-lt {
-    @extend %flex;
-}
 
-.service-pic-s {
-    @extend %flex;
-}
-
-.service-pic-t {
-    @extend %flex;
-}
-
-.service-pic-wl {
-    @extend %flex;
-}
-
-.service-pic-mt {
-    @extend %flex;
-}
-
-.service-gtranslation {
-    @include alignment(justify, 0, 1rem);
-    display: flex;
-    justify-content: start;
-}
-
-.service-ltranslation {
-    @include alignment(justify, 0, 1rem);
-    display: flex;
-    justify-content: end;
-}
-
-.service-subtitling {
-    @include alignment(justify, 0, 1rem);
-    display: flex;
-    justify-content: start;
-}
-
-.service-transcription {
-    @include alignment(justify, 0, 1rem);
-    display: flex;
-    justify-content: end;
-}
-
-.service-website {
-    @include alignment(justify, 0, 1rem);
-    display: flex;
-    justify-content: start;
-}
-
-.service-mtranslation {
-    @include alignment(justify, 0, 1rem);
-    display: flex;
-    justify-content: end;
-}

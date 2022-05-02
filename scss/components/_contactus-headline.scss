@@ -1,11 +1,13 @@
+@import '../base/variables';
+
 .headline-contactus {
     background-image: url(../images/damian-zaleski-RYyr-k3Ysqg-unsplash.jpg);
     background-size: cover;
-    padding: 10rem 3rem 10rem 3rem;
-}
+    padding: 10rem 3rem;
 
-.welcome-text-black {
-    color: black;
-    font-weight: bolder;
-    text-align: center;
+    .welcome-text-black {
+        color: $dark;
+        font-weight: bolder;
+        text-align: center;
+    }
 }

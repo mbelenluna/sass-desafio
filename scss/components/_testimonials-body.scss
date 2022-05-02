@@ -15,31 +15,41 @@
     grid-template-columns: 60%;
     grid-template-rows: 1fr 1fr;
     justify-content: center;
-}
 
-#test-1 {
-    grid-area: test-1;
-}
+    #test-1 {
+        grid-area: test-1;
+    }
+    
+    #test-2 {
+        grid-area: test-2;
+    }
+    
+    #test-3 {
+        grid-area: test-3;
+    }
+    
+    #test-4 {
+        grid-area: test-4;
+    }
 
-#test-2 {
-    grid-area: test-2;
-}
+    .testimonial {
+        font-family: testimonials;
+        margin: map-get($testimonial, margin-testimonial);
+        color: map-get($testimonial, color-testimonial);
+        padding: map-get($testimonial, padding-testimonial);
+    }
 
-#test-3 {
-    grid-area: test-3;
-}
-
-#test-4 {
-    grid-area: test-4;
-}
-
-.client-logo {
-    width: 10%;
-}
-
-#carouselExampleSlidesOnly {
-    height: 223px;
-    width: 226px;
+    .image-testimonial {
+        width: 40%;
+    }
+    
+    .image-testimonial1 {
+        grid-area: image1;
+    }
+    
+    .image-testimonial2 {
+        grid-area: image2;
+    }
 }
 
 .our-clients {
@@ -47,23 +57,12 @@
     justify-content: center;
     flex-direction: row;
     align-items: center;
+
+    #carouselExampleSlidesOnly {
+        height: 223px;
+        width: 226px;
+    }
 }
 
-.testimonial {
-    font-family: testimonials;
-    margin: map-get($testimonial, margin-testimonial);
-    color: map-get($testimonial, color-testimonial);
-    padding: map-get($testimonial, padding-testimonial);
-}
 
-.image-testimonial {
-    width: 40%;
-}
 
-.image-testimonial1 {
-    grid-area: image1;
-}
-
-.image-testimonial2 {
-    grid-area: image2;
-}

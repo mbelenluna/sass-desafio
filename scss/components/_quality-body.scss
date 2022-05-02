@@ -1,3 +1,6 @@
+@import '../base/variables';
+@import '../base/extends';
+
 #body-ourprocess {
     margin: 2rem;
     text-align: justify;
@@ -9,32 +12,32 @@
     "image-ourprocess";
     grid-template-columns: 70%;
     justify-content: center;
+
+    .quality-container {
+        background-color: $light;
+
+        .ourprocess-title {
+            grid-area: ourprocess-title;
+        }
+
+        .ourprocess {
+            grid-area: ourprocess;
+        }
+        
+        .steps {
+            grid-area: steps;
+        }        
+
+        .image-ourprocess {
+            grid-area: image-ourprocess;
+            width: 100%;
+            @extend %flex;
+        }
+    }
 }
 
-.ourprocess-title {
-    grid-area: ourprocess-title;
-}
 
-.ourprocess {
-    grid-area: ourprocess;
-}
 
-.steps {
-    grid-area: steps;
-}
 
-.image-ourprocess {
-    grid-area: image-ourprocess;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
 
-.quality-img {
-    width: 100%;
-    padding-bottom: 2rem;
-}
 
-.quality-container {
-    background-color: $light;
-}

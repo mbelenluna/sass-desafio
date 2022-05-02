@@ -2,10 +2,10 @@
 
 #header {
     border-bottom: 3px solid $main-color;
-    top: 0;
-    position: absolute;
     height: auto;
+    top: 0;
     position: sticky;
+    width: 100%;
     background-color: $light;
     z-index: 1;
 

@@ -81,10 +81,10 @@ a {
 
 #header {
   border-bottom: 3px solid #1b74bc;
-  top: 0;
-  position: absolute;
   height: auto;
+  top: 0;
   position: sticky;
+  width: 100%;
   background-color: white;
   z-index: 1;
 }

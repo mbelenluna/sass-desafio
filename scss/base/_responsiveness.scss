@@ -119,10 +119,10 @@
         "aboutus-paragraph2"
         "aboutus-photo2";
         grid-template-columns: 100%;
-    }
 
-    .standard {
-        width: 100%;
+        .standard {
+            width: 100%;
+        }
     }
 
     .location-container {
@@ -200,12 +200,12 @@
         "description-quote" !important;
         grid-template-columns: 100% !important;
         justify-content: center;
-    }
 
-    .contact-form {
-        margin: 1rem;
-        display: flex;
-        justify-content: center;
+        .contact-form {
+            margin: 1rem;
+            display: flex;
+            justify-content: center;
+        }
     }
 
     .description-quote {
@@ -247,21 +247,21 @@
     /* Contact Us */
 
     .form-row textarea {
-        min-height: 50px !important;
-        min-width: 100% !important;
+        min-height: 50px;
+        min-width: 100%;
     }
 
     .form-row {
-        min-height: 50px !important;
-        min-width: 100% !important;
+        min-height: 50px;
+        min-width: 100%;
     }
 
     .form {
-        width: 100% !important;
+        width: 100%;
     }
 
     .contact-form {
-        margin: 1rem !important;
+        margin: 1rem;
     }
 
     #file {

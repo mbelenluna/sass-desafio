@@ -37,6 +37,13 @@
         margin: map-get($testimonial, margin-testimonial);
         color: map-get($testimonial, color-testimonial);
         padding: map-get($testimonial, padding-testimonial);
+        border: 5px solid $dark;
+        border-radius: 50px;
+        background-color: $main-color;
+
+        .quotation-marks {
+            width: 60px;
+        }
     }
 
     .image-testimonial {
@@ -53,10 +60,9 @@
 }
 
 .our-clients {
-    display: flex;
-    justify-content: center;
+    @extend %flex;
     flex-direction: row;
-    align-items: center;
+
 
     #carouselExampleSlidesOnly {
         height: 223px;

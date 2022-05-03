@@ -1,4 +1,5 @@
 @import '../base/variables';
+@import '../base/mixins';
 
 #contact {
     font-family: parrafos;
@@ -78,8 +79,7 @@
         justify-content: flex-start;
     
         .location {
-            text-align: center;
-            margin: 2rem;
+            @include alignment(center, 0, 2rem);
         }
     
         .image-contactus {

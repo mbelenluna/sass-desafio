@@ -170,6 +170,10 @@
 
     .testimonials-container {
         grid-template-columns: 100%;
+
+        .quotation-marks {
+            width: 40px;
+        }
     }
 
     /* Contact Us page */

@@ -1,5 +1,7 @@
 @import '../base/variables';
 @import '../base/extends';
+@import '../base/mixins';
+
 .headline {
     background: url(../../images/banner.jpg);
     background-size: cover;
@@ -24,7 +26,6 @@
 
 .button {
     font-family: links;
-    text-align: center;
     color: $secondary-color;
     font-weight: bold;
     font-size: larger;
@@ -34,7 +35,7 @@
     grid-area: button;
     font-size: 20px;
     background-color: $light;
-    padding: 10px 40px;
+    @include alignment(center, 10px 40px, 0);
     cursor: pointer;
     max-width: 400px;
 

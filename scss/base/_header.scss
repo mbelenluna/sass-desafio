@@ -13,6 +13,84 @@
         display: flex;
         justify-content: space-between;
         flex-direction: row;
+
+        #menuitem1 {
+            grid-area: menuitem1;
+            margin: $standard-size;
+        }
+        
+        #menuitem2 {
+            grid-area: menuitem2;
+            margin: $standard-size;
+        }
+        
+        #menuitem3 {
+            grid-area: menuitem3;
+            margin: $standard-size;
+        }
+        
+        #menuitem4 {
+            grid-area: menuitem4;
+            margin: $standard-size;
+        }
+        
+        #menuitem5 {
+            grid-area: menuitem5;
+            margin: $standard-size;
+        }
+        
+        #menuitem6 a {
+            grid-area: menuitem6;
+            margin: $standard-size;
+            background-color: $secondary-color;
+            border-radius: 6px;
+            padding: 10px;
+            color: $light;
+            font-family: parrafos;
+            font-weight: bolder;
+
+            &:hover {
+                transition: all .5s;
+                color: $light;
+                background-color: $dark;
+            }
+        }
+
+        .logo {
+            width: 15%;
+            text-align: center;
+            grid-area: logo;
+        }
+        
+        .menu-item {
+            font-family: parrafos;
+            font-weight: bold;
+            color: $light;
+            text-align: center;
+        
+            a {
+                border-radius: 6px;
+                padding: 10px;
+                
+                &:hover {
+                    transition: all .5s;
+                    color: $light;
+                    background-color: $secondary-color;
+                }
+            }
+        }
+        
+        #logo {
+            width: 80%;
+        }
+
+        .menu-item-selected {
+            font-family: parrafos;
+            font-weight: bold;
+            color: $dark;
+            text-align: center;
+            padding: 10px;
+        }
     }
 
     .menu-items {
@@ -28,68 +106,7 @@
     }
 }
 
-#menuitem1 {
-    grid-area: menuitem1;
-    margin: 1rem;
-}
 
-#menuitem2 {
-    grid-area: menuitem2;
-    margin: 1rem;
-}
 
-#menuitem3 {
-    grid-area: menuitem3;
-    margin: 1rem;
-}
 
-#menuitem4 {
-    grid-area: menuitem4;
-    margin: 1rem;
-}
 
-#menuitem5 {
-    grid-area: menuitem5;
-    margin: 1rem;
-}
-
-#menuitem6 {
-    grid-area: menuitem6;
-    margin: 1rem;
-}
-
-.logo {
-    width: 15%;
-    text-align: center;
-    grid-area: logo;
-}
-
-.menu-item {
-    font-family: parrafos;
-    font-weight: bold;
-    color: $light;
-    text-align: center;
-
-    a {
-        border-radius: 6px;
-        padding: 10px;
-        
-        &:hover {
-            transition: all .5s;
-            color: $light;
-            background-color: $secondary-color;
-        }
-    }
-}
-
-.menu-item-selected {
-    font-family: parrafos;
-    font-weight: bold;
-    color: $dark;
-    text-align: center;
-    padding: 10px;
-}
-
-#logo {
-    width: 80%;
-}

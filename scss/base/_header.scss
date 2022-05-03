@@ -63,6 +63,7 @@
             font-size: 1.5rem;
             text-shadow: -1px 0 $dark, 0 1px $third-color, 1px 0 $third-color, 0 -1px $third-color;
             padding: 1rem;
+            @extend %flex;
         }
         
         .menu-item {

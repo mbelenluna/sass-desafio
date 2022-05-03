@@ -17,20 +17,31 @@
         }
 }
 
+@media screen and (max-width:991px) {
+    #header {
+        .navbar {
+            display: block;
+            background-color: $dark;
+            
+            .logo {
+                .logo-style {
+                    font-size: 1.5rem;
+                    text-shadow: -1px 0 $dark, 0 1px $third-color, 1px 0 $third-color, 0 -1px $third-color;
+                    padding: 1rem;
+                }
+            }
+        }
+        .menu {
+            display: none;
+        }
+    }
+}
+
 @media screen and (max-width:767px) {
     /*Todas las paginas */
 
     body {
         padding-top: 150px;
-    }
-
-    #header {
-        .navbar {
-            display: block;
-        }
-        .menu {
-            display: none;
-        }
     }
 
     .decreased {

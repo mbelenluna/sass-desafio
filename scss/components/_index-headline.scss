@@ -5,7 +5,14 @@
 .headline {
     background: url(../../images/banner.jpg);
     background-size: cover;
-    padding: 10rem 3rem;
+    padding: 18rem 3rem;
+}
+
+.back-video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
 }
 
 .title-headline {

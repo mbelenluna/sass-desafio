@@ -1,12 +1,9 @@
 @import 'variables';
 
 #header {
-    border-bottom: 3px solid $main-color;
     height: auto;
-    top: 0;
     position: sticky;
     width: 100%;
-    background-color: $light;
     z-index: 1;
 
     .menu {
@@ -17,26 +14,31 @@
         #menuitem1 {
             grid-area: menuitem1;
             margin: $standard-size;
+            white-space: nowrap;
         }
         
         #menuitem2 {
             grid-area: menuitem2;
             margin: $standard-size;
+            white-space: nowrap;
         }
         
         #menuitem3 {
             grid-area: menuitem3;
             margin: $standard-size;
+            white-space: nowrap;
         }
         
         #menuitem4 {
             grid-area: menuitem4;
             margin: $standard-size;
+            white-space: nowrap;
         }
         
         #menuitem5 {
             grid-area: menuitem5;
             margin: $standard-size;
+            white-space: nowrap;
         }
         
         #menuitem6 a {
@@ -48,6 +50,7 @@
             color: $light;
             font-family: parrafos;
             font-weight: bolder;
+            white-space: nowrap;
 
             &:hover {
                 transition: all .5s;
@@ -56,10 +59,10 @@
             }
         }
 
-        .logo {
-            width: 15%;
-            text-align: center;
-            grid-area: logo;
+        .logo-style {
+            font-size: 1.5rem;
+            text-shadow: -1px 0 $dark, 0 1px $third-color, 1px 0 $third-color, 0 -1px $third-color;
+            padding: 1rem;
         }
         
         .menu-item {
@@ -80,11 +83,15 @@
             }
         }
         
-        #logo {
-            width: 80%;
+        .menu-item-selected {
+            font-family: parrafos;
+            font-weight: bold;
+            color: $third-color;
+            text-align: center;
+            padding: 10px;
         }
 
-        .menu-item-selected {
+        .menu-item-selected2 {
             font-family: parrafos;
             font-weight: bold;
             color: $dark;
@@ -99,6 +106,22 @@
         "menuitem1 menuitem2 menuitem3 menuitem4 menuitem5 menuitem6";
         align-items: center;
         justify-content: space-between;
+
+        a {
+            color: $light;
+        }
+    }
+
+    .menu-items2 {
+        display: grid;
+        grid-template-areas: 
+        "menuitem1 menuitem2 menuitem3 menuitem4 menuitem5 menuitem6";
+        align-items: center;
+        justify-content: space-between;
+
+        a {
+            color: $dark;
+        }
     }
 
     .navbar {

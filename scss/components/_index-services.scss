@@ -1,6 +1,10 @@
 @import '../base/variables';
 @import '../base/extends';
 
+#services {
+    background-color: $light;
+}
+
 .serviceslist-container-home {
     display: grid;
     grid-template-areas:
@@ -46,5 +50,4 @@
         @extend %flex;
         margin: $standard-size;
     }
-    
 }

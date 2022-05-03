@@ -76,12 +76,9 @@ a {
 }
 
 #header {
-  border-bottom: 3px solid #1b74bc;
   height: auto;
-  top: 0;
   position: sticky;
   width: 100%;
-  background-color: white;
   z-index: 1;
 }
 #header .menu {
@@ -92,22 +89,27 @@ a {
 #header .menu #menuitem1 {
   grid-area: menuitem1;
   margin: 1rem;
+  white-space: nowrap;
 }
 #header .menu #menuitem2 {
   grid-area: menuitem2;
   margin: 1rem;
+  white-space: nowrap;
 }
 #header .menu #menuitem3 {
   grid-area: menuitem3;
   margin: 1rem;
+  white-space: nowrap;
 }
 #header .menu #menuitem4 {
   grid-area: menuitem4;
   margin: 1rem;
+  white-space: nowrap;
 }
 #header .menu #menuitem5 {
   grid-area: menuitem5;
   margin: 1rem;
+  white-space: nowrap;
 }
 #header .menu #menuitem6 a {
   grid-area: menuitem6;
@@ -118,16 +120,17 @@ a {
   color: white;
   font-family: parrafos;
   font-weight: bolder;
+  white-space: nowrap;
 }
 #header .menu #menuitem6 a:hover {
   transition: all 0.5s;
   color: white;
   background-color: black;
 }
-#header .menu .logo {
-  width: 15%;
-  text-align: center;
-  grid-area: logo;
+#header .menu .logo-style {
+  font-size: 1.5rem;
+  text-shadow: -1px 0 black, 0 1px lavender, 1px 0 lavender, 0 -1px lavender;
+  padding: 1rem;
 }
 #header .menu .menu-item {
   font-family: parrafos;
@@ -144,10 +147,14 @@ a {
   color: white;
   background-color: #1762b9;
 }
-#header .menu #logo {
-  width: 80%;
-}
 #header .menu .menu-item-selected {
+  font-family: parrafos;
+  font-weight: bold;
+  color: lavender;
+  text-align: center;
+  padding: 10px;
+}
+#header .menu .menu-item-selected2 {
   font-family: parrafos;
   font-weight: bold;
   color: black;
@@ -160,11 +167,23 @@ a {
   align-items: center;
   justify-content: space-between;
 }
+#header .menu-items a {
+  color: white;
+}
+#header .menu-items2 {
+  display: grid;
+  grid-template-areas: "menuitem1 menuitem2 menuitem3 menuitem4 menuitem5 menuitem6";
+  align-items: center;
+  justify-content: space-between;
+}
+#header .menu-items2 a {
+  color: black;
+}
 #header .navbar {
   display: none;
 }
 
-.our-clients, .quality-img, .serviceslist-container .service-pic-mt, .serviceslist-container .service-pic-wl, .serviceslist-container .service-pic-t, .serviceslist-container .service-pic-s, .serviceslist-container .service-pic-lt, .serviceslist-container .service-pic-gt, .location-container .our-location, .testimonials-container-home .moreinfo-testimonials, .serviceslist-container-home .grid-viewall, .serviceslist-container-home .grid-subtitling, .serviceslist-container-home .grid-transcription, .serviceslist-container-home .grid-translation, .serviceslist-container-home .grid-title, .textheadline, .headline, .contact-footer, .pay-paypal, .go-top, .footer-container .menu-footer {
+.our-clients, .quality-img, .serviceslist-container .service-pic-mt, .serviceslist-container .service-pic-wl, .serviceslist-container .service-pic-t, .serviceslist-container .service-pic-s, .serviceslist-container .service-pic-lt, .serviceslist-container .service-pic-gt, .location-container .our-location, .testimonials-container-home .moreinfo-testimonials, .serviceslist-container-home .grid-viewall, .serviceslist-container-home .grid-subtitling, .serviceslist-container-home .grid-transcription, .serviceslist-container-home .grid-translation, .serviceslist-container-home .grid-title, .textheadline, .contact-footer, .pay-paypal, .go-top, .footer-container .menu-footer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -227,7 +246,7 @@ a {
   padding-bottom: 10px;
 }
 
-.our-clients, .quality-img, .serviceslist-container .service-pic-mt, .serviceslist-container .service-pic-wl, .serviceslist-container .service-pic-t, .serviceslist-container .service-pic-s, .serviceslist-container .service-pic-lt, .serviceslist-container .service-pic-gt, .location-container .our-location, .testimonials-container-home .moreinfo-testimonials, .serviceslist-container-home .grid-viewall, .serviceslist-container-home .grid-subtitling, .serviceslist-container-home .grid-transcription, .serviceslist-container-home .grid-translation, .serviceslist-container-home .grid-title, .textheadline, .headline, .footer-container .menu-footer, .go-top, .pay-paypal, .contact-footer {
+.our-clients, .quality-img, .serviceslist-container .service-pic-mt, .serviceslist-container .service-pic-wl, .serviceslist-container .service-pic-t, .serviceslist-container .service-pic-s, .serviceslist-container .service-pic-lt, .serviceslist-container .service-pic-gt, .location-container .our-location, .testimonials-container-home .moreinfo-testimonials, .serviceslist-container-home .grid-viewall, .serviceslist-container-home .grid-subtitling, .serviceslist-container-home .grid-transcription, .serviceslist-container-home .grid-translation, .serviceslist-container-home .grid-title, .textheadline, .footer-container .menu-footer, .go-top, .pay-paypal, .contact-footer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -235,10 +254,14 @@ a {
 
 .headline {
   background-size: cover;
-  padding: 10rem 3rem;
-  width: 100%;
-  height: 100vh;
-  background-image: linear-gradient(#1762b9), rgba(12, 3, 51, 0.7);
+  padding: 18rem 3rem;
+}
+
+.back-video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
 }
 
 .title-headline {
@@ -281,10 +304,14 @@ a {
   transition: all 0.5s;
 }
 
-.our-clients, .quality-img, .serviceslist-container .service-pic-mt, .serviceslist-container .service-pic-wl, .serviceslist-container .service-pic-t, .serviceslist-container .service-pic-s, .serviceslist-container .service-pic-lt, .serviceslist-container .service-pic-gt, .location-container .our-location, .testimonials-container-home .moreinfo-testimonials, .serviceslist-container-home .grid-viewall, .serviceslist-container-home .grid-subtitling, .serviceslist-container-home .grid-transcription, .serviceslist-container-home .grid-translation, .serviceslist-container-home .grid-title, .footer-container .menu-footer, .go-top, .pay-paypal, .contact-footer, .headline, .textheadline {
+.our-clients, .quality-img, .serviceslist-container .service-pic-mt, .serviceslist-container .service-pic-wl, .serviceslist-container .service-pic-t, .serviceslist-container .service-pic-s, .serviceslist-container .service-pic-lt, .serviceslist-container .service-pic-gt, .location-container .our-location, .testimonials-container-home .moreinfo-testimonials, .serviceslist-container-home .grid-viewall, .serviceslist-container-home .grid-subtitling, .serviceslist-container-home .grid-transcription, .serviceslist-container-home .grid-translation, .serviceslist-container-home .grid-title, .footer-container .menu-footer, .go-top, .pay-paypal, .contact-footer, .textheadline {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#services {
+  background-color: white;
 }
 
 .serviceslist-container-home {
@@ -359,7 +386,7 @@ ul li {
   color: white;
 }
 
-.our-clients, .quality-img, .serviceslist-container .service-pic-mt, .serviceslist-container .service-pic-wl, .serviceslist-container .service-pic-t, .serviceslist-container .service-pic-s, .serviceslist-container .service-pic-lt, .serviceslist-container .service-pic-gt, .location-container .our-location, .testimonials-container-home .moreinfo-testimonials, .footer-container .menu-footer, .go-top, .pay-paypal, .contact-footer, .headline, .textheadline, .serviceslist-container-home .grid-title, .serviceslist-container-home .grid-translation, .serviceslist-container-home .grid-transcription, .serviceslist-container-home .grid-subtitling, .serviceslist-container-home .grid-viewall {
+.our-clients, .quality-img, .serviceslist-container .service-pic-mt, .serviceslist-container .service-pic-wl, .serviceslist-container .service-pic-t, .serviceslist-container .service-pic-s, .serviceslist-container .service-pic-lt, .serviceslist-container .service-pic-gt, .location-container .our-location, .testimonials-container-home .moreinfo-testimonials, .footer-container .menu-footer, .go-top, .pay-paypal, .contact-footer, .textheadline, .serviceslist-container-home .grid-title, .serviceslist-container-home .grid-translation, .serviceslist-container-home .grid-transcription, .serviceslist-container-home .grid-subtitling, .serviceslist-container-home .grid-viewall {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -474,17 +501,28 @@ ul li {
     grid-template-columns: 40% 40%;
   }
 }
+@media screen and (max-width: 991px) {
+  #header .navbar {
+    display: block;
+    background-color: white;
+  }
+  #header .navbar .logo .logo-style {
+    font-size: 1.2rem;
+    text-shadow: -1px 0 black, 0 1px lavender, 1px 0 lavender, 0 -1px lavender;
+    padding: 1rem;
+  }
+  #header .menu {
+    display: none;
+  }
+
+  body {
+    padding-top: 80px;
+  }
+}
 @media screen and (max-width: 767px) {
   /*Todas las paginas */
   body {
     padding-top: 150px;
-  }
-
-  #header .navbar {
-    display: block;
-  }
-  #header .menu {
-    display: none;
   }
 
   .decreased {
@@ -493,7 +531,7 @@ ul li {
 
   .headline {
     background-size: cover;
-    padding: 5rem 2rem 5rem 2rem;
+    padding: 3rem 0 6rem 0;
   }
 
   .footer-container {
@@ -611,16 +649,18 @@ ul li {
   #contact {
     grid-template-areas: "title-form" "form" "description-quote" !important;
     grid-template-columns: 100% !important;
-    justify-content: center !important;
+    justify-content: center;
   }
 
   .contact-form {
-    margin: 1rem !important;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
   }
 
   .description-quote {
     margin: 2rem;
-    padding-right: 0 !important;
+    padding-right: 0;
   }
 }
 @media screen and (max-width: 346px) {
@@ -969,7 +1009,7 @@ ul li {
   padding: 5rem 3rem;
 }
 
-.our-clients, .quality-img, .footer-container .menu-footer, .go-top, .pay-paypal, .contact-footer, .headline, .textheadline, .serviceslist-container-home .grid-title, .serviceslist-container-home .grid-translation, .serviceslist-container-home .grid-transcription, .serviceslist-container-home .grid-subtitling, .serviceslist-container-home .grid-viewall, .testimonials-container-home .moreinfo-testimonials, .location-container .our-location, .serviceslist-container .service-pic-gt, .serviceslist-container .service-pic-lt, .serviceslist-container .service-pic-s, .serviceslist-container .service-pic-t, .serviceslist-container .service-pic-wl, .serviceslist-container .service-pic-mt {
+.our-clients, .quality-img, .footer-container .menu-footer, .go-top, .pay-paypal, .contact-footer, .textheadline, .serviceslist-container-home .grid-title, .serviceslist-container-home .grid-translation, .serviceslist-container-home .grid-transcription, .serviceslist-container-home .grid-subtitling, .serviceslist-container-home .grid-viewall, .testimonials-container-home .moreinfo-testimonials, .location-container .our-location, .serviceslist-container .service-pic-gt, .serviceslist-container .service-pic-lt, .serviceslist-container .service-pic-s, .serviceslist-container .service-pic-t, .serviceslist-container .service-pic-wl, .serviceslist-container .service-pic-mt {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1009,7 +1049,7 @@ ul li {
   grid-template-areas: "title-headline" "welcome-text";
 }
 
-.our-clients, .footer-container .menu-footer, .go-top, .pay-paypal, .contact-footer, .headline, .textheadline, .serviceslist-container-home .grid-title, .serviceslist-container-home .grid-translation, .serviceslist-container-home .grid-transcription, .serviceslist-container-home .grid-subtitling, .serviceslist-container-home .grid-viewall, .testimonials-container-home .moreinfo-testimonials, .location-container .our-location, .serviceslist-container .service-pic-gt, .serviceslist-container .service-pic-lt, .serviceslist-container .service-pic-s, .serviceslist-container .service-pic-t, .serviceslist-container .service-pic-wl, .serviceslist-container .service-pic-mt, .quality-img {
+.our-clients, .footer-container .menu-footer, .go-top, .pay-paypal, .contact-footer, .textheadline, .serviceslist-container-home .grid-title, .serviceslist-container-home .grid-translation, .serviceslist-container-home .grid-transcription, .serviceslist-container-home .grid-subtitling, .serviceslist-container-home .grid-viewall, .testimonials-container-home .moreinfo-testimonials, .location-container .our-location, .serviceslist-container .service-pic-gt, .serviceslist-container .service-pic-lt, .serviceslist-container .service-pic-s, .serviceslist-container .service-pic-t, .serviceslist-container .service-pic-wl, .serviceslist-container .service-pic-mt, .quality-img {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1065,7 +1105,7 @@ ul li {
   width: 226px;
 }
 
-.footer-container .menu-footer, .go-top, .pay-paypal, .contact-footer, .headline, .textheadline, .serviceslist-container-home .grid-title, .serviceslist-container-home .grid-translation, .serviceslist-container-home .grid-transcription, .serviceslist-container-home .grid-subtitling, .serviceslist-container-home .grid-viewall, .testimonials-container-home .moreinfo-testimonials, .location-container .our-location, .serviceslist-container .service-pic-gt, .serviceslist-container .service-pic-lt, .serviceslist-container .service-pic-s, .serviceslist-container .service-pic-t, .serviceslist-container .service-pic-wl, .serviceslist-container .service-pic-mt, .quality-img, .our-clients {
+.footer-container .menu-footer, .go-top, .pay-paypal, .contact-footer, .textheadline, .serviceslist-container-home .grid-title, .serviceslist-container-home .grid-translation, .serviceslist-container-home .grid-transcription, .serviceslist-container-home .grid-subtitling, .serviceslist-container-home .grid-viewall, .testimonials-container-home .moreinfo-testimonials, .location-container .our-location, .serviceslist-container .service-pic-gt, .serviceslist-container .service-pic-lt, .serviceslist-container .service-pic-s, .serviceslist-container .service-pic-t, .serviceslist-container .service-pic-wl, .serviceslist-container .service-pic-mt, .quality-img, .our-clients {
   display: flex;
   justify-content: center;
   align-items: center;

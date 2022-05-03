@@ -27,12 +27,6 @@
         .steps {
             grid-area: steps;
         }        
-
-        .image-ourprocess {
-            grid-area: image-ourprocess;
-            width: 100%;
-            @extend %flex;
-        }
     }
 }
 

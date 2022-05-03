@@ -21,11 +21,11 @@
     #header {
         .navbar {
             display: block;
-            background-color: $dark;
+            background-color: $light;
             
             .logo {
                 .logo-style {
-                    font-size: 1.5rem;
+                    font-size: 1.2rem;
                     text-shadow: -1px 0 $dark, 0 1px $third-color, 1px 0 $third-color, 0 -1px $third-color;
                     padding: 1rem;
                 }
@@ -34,6 +34,10 @@
         .menu {
             display: none;
         }
+    }
+
+    body {
+        padding-top: 80px;
     }
 }
 
@@ -50,7 +54,7 @@
 
     .headline {
         background-size: cover;
-        padding: 5rem 2rem 5rem 2rem;
+        padding: 3rem 0 6rem 0;
     }
 
     .footer-container {
@@ -195,16 +199,18 @@
         "form"
         "description-quote" !important;
         grid-template-columns: 100% !important;
-        justify-content: center !important;
+        justify-content: center;
     }
 
     .contact-form {
-        margin: 1rem !important;
+        margin: 1rem;
+        display: flex;
+        justify-content: center;
     }
 
     .description-quote {
         margin: 2rem;
-        padding-right: 0 !important;
+        padding-right: 0;
     } 
 }
 

@@ -9,8 +9,6 @@
     display: none;
 }
 
-
-
 @font-face {
     font-family: parrafos;
     src: url(../fonts/Heebo-Light.ttf);
@@ -78,8 +76,14 @@ h5 {
 
 p {
     font-family: parrafos;
+    font-weight: bold;
 }
 
 a {
     text-decoration: none;
+}
+
+ol li {
+    font-family: parrafos;
+    font-weight: bold;
 }

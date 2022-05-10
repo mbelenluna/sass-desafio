@@ -37,6 +37,11 @@
 .go-top {
     grid-area: go-top;
     @extend %flex;
+    flex-direction: column;
+
+    .copyright {
+        color: $light;
+    }
 
     a {
         color: $secondary-color;

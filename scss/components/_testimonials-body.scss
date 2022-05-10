@@ -37,12 +37,12 @@
         margin: map-get($testimonial, margin-testimonial);
         color: map-get($testimonial, color-testimonial);
         padding: map-get($testimonial, padding-testimonial);
-        border: 5px solid $dark;
-        border-radius: 50px;
-        background-color: $main-color;
+        border: 2px solid $third-color;
+        border-radius: 20px;
+        background-color: $light;
 
         .quotation-marks {
-            width: 60px;
+            width: 3rem;
         }
     }
 

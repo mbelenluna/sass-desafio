@@ -26,7 +26,19 @@
         
         .steps {
             grid-area: steps;
+            
+            .chart {
+                text-align: center;
+            }
         }        
     }
 }
 
+.standard {
+    width: 100%;
+    margin: 2rem;
+}
+
+.explanation {
+    text-align: center;
+}

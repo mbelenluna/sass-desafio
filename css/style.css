@@ -69,10 +69,16 @@ h5 {
 
 p {
   font-family: parrafos;
+  font-weight: bold;
 }
 
 a {
   text-decoration: none;
+}
+
+ol li {
+  font-family: parrafos;
+  font-weight: bold;
 }
 
 #header {
@@ -218,6 +224,10 @@ a {
 
 .go-top {
   grid-area: go-top;
+  flex-direction: column;
+}
+.go-top .copyright {
+  color: white;
 }
 .go-top a {
   color: #1762b9;
@@ -1033,6 +1043,18 @@ ul li {
 #body-ourprocess .quality-container .steps {
   grid-area: steps;
 }
+#body-ourprocess .quality-container .steps .chart {
+  text-align: center;
+}
+
+.standard {
+  width: 100%;
+  margin: 2rem;
+}
+
+.explanation {
+  text-align: center;
+}
 
 .headline-testimonials {
   background-color: black;
@@ -1071,14 +1093,14 @@ ul li {
 .testimonials-container .testimonial {
   font-family: testimonials;
   margin: 10px;
-  color: white;
+  color: #1b74bc;
   padding: 1rem;
-  border: 5px solid black;
-  border-radius: 50px;
-  background-color: #1b74bc;
+  border: 2px solid lavender;
+  border-radius: 20px;
+  background-color: white;
 }
 .testimonials-container .testimonial .quotation-marks {
-  width: 60px;
+  width: 3rem;
 }
 .testimonials-container .image-testimonial {
   width: 40%;

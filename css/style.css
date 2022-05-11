@@ -10,7 +10,7 @@
 
 @font-face {
   font-family: parrafos;
-  src: url(../fonts/Heebo-Light.ttf);
+  src: url(../fonts/Heebo-Regular.ttf);
 }
 @font-face {
   font-family: titulos1;
@@ -69,7 +69,6 @@ h5 {
 
 p {
   font-family: parrafos;
-  font-weight: bold;
 }
 
 a {
@@ -78,7 +77,6 @@ a {
 
 ol li {
   font-family: parrafos;
-  font-weight: bold;
 }
 
 #header {
@@ -228,6 +226,7 @@ ol li {
 }
 .go-top .copyright {
   color: white;
+  text-align: center;
 }
 .go-top a {
   color: #1762b9;
@@ -442,6 +441,7 @@ ul li {
   grid-template-areas: "aboutus-photo1 aboutus-paragraph1" "aboutus-paragraph2 aboutus-photo2";
   grid-template-columns: 40% 40%;
   justify-content: center;
+  overflow: hidden;
 }
 .aboutus-container .aboutus-photo1 {
   grid-area: aboutus-photo1;
@@ -531,6 +531,10 @@ ul li {
 }
 @media screen and (max-width: 767px) {
   /*Todas las paginas */
+  html, body {
+    max-width: 100%;
+  }
+
   body {
     padding-top: 150px;
   }
@@ -542,6 +546,10 @@ ul li {
   .headline {
     background-size: cover;
     padding: 3rem 0 6rem 0;
+  }
+
+  .footer-rem {
+    margin-top: 2rem;
   }
 
   .footer-container {
@@ -606,12 +614,6 @@ ul li {
   }
 
   /* Our Services page */
-  .service {
-    width: 90%;
-    margin: 1rem;
-    max-width: 450px;
-  }
-
   .service-gtranslation {
     border: 1px gray solid;
     border-radius: 4px;
@@ -647,11 +649,13 @@ ul li {
     padding: 1rem;
   }
 
-  .testimonials-container {
-    grid-template-columns: 100%;
-  }
   .testimonials-container .quotation-marks {
     width: 40px;
+  }
+
+  .img-carrousel {
+    width: 100%;
+    text-align: center;
   }
 
   /* Contact Us page */
@@ -952,6 +956,7 @@ ul li {
 .serviceslist-container {
   width: 100%;
   background-color: white;
+  overflow: hidden;
 }
 .serviceslist-container .service-gtranslation {
   text-align: justify;
@@ -1047,9 +1052,9 @@ ul li {
   text-align: center;
 }
 
-.standard {
+.quality-image {
   width: 100%;
-  margin: 2rem;
+  margin: 2px;
 }
 
 .explanation {
@@ -1074,8 +1079,7 @@ ul li {
   text-align: center;
   display: grid;
   grid-template-areas: "test-1" "test-2" "image1" "test-3" "test-4" "image2";
-  grid-template-columns: 60%;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 70%;
   justify-content: center;
 }
 .testimonials-container #test-1 {

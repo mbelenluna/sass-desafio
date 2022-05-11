@@ -531,12 +531,8 @@ ul li {
 }
 @media screen and (max-width: 767px) {
   /*Todas las paginas */
-  html, body {
-    max-width: 100%;
-  }
-
   body {
-    padding-top: 150px;
+    padding-top: 100px;
   }
 
   .decreased {
@@ -756,6 +752,7 @@ ul li {
   display: grid;
   grid-template-areas: "header" "headline" "services" "languages" "sometestimonials" "footer";
   grid-template-rows: repeat(6, auto);
+  overflow-x: hidden;
 }
 
 #header {

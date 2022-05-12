@@ -78,6 +78,10 @@
 
     /*Home Page */
 
+    .headline {
+        margin-top: 50px;
+    }
+
     .serviceslist-container-home {
         display: grid;
         grid-template-areas:
@@ -202,12 +206,6 @@
         "description-quote" !important;
         grid-template-columns: 100% !important;
         justify-content: center;
-
-        .contact-form {
-            margin: 1rem;
-            display: flex;
-            justify-content: center;
-        }
     }
 
     .description-quote {
@@ -249,22 +247,21 @@
     /* Contact Us */
 
     .form-row textarea {
-        min-height: 50px;
+        min-height: 45px;
         min-width: 100%;
     }
 
     .form-row {
-        min-height: 50px;
+        min-height: 45px;
         min-width: 100%;
     }
 
-    .form {
-        width: 100%;
+    #contact {
+        .contact-form {
+            width: 100%;
+        }
     }
 
-    .contact-form {
-        margin: 1rem;
-    }
 
     #file {
         word-wrap: break-word;

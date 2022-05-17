@@ -217,6 +217,31 @@
     } 
 }
 
+@media screen and (max-width:575px) {
+        /* Home Page */
+
+        #languages {
+            .language-list1 {
+                text-align: center;
+                padding-bottom: 0;
+                padding-top: 0;
+            }
+    
+            .language-list2 {
+                text-align: center;
+                padding-bottom: 0;
+                padding-top: 0;
+    
+            }
+    
+            .language-list3 {
+                text-align: center;
+                padding-bottom: 0;
+                padding-top: 0;
+            }
+        }
+}
+
 @media screen and (max-width:346px) {
 
     /* Todas las páginas */

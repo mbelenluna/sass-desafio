@@ -363,11 +363,6 @@ ol li {
 #languages .languages-title {
   grid-area: languages-title;
 }
-#languages .languagelist-title {
-  font-weight: bold;
-  padding: 1rem;
-  color: #1b74bc;
-}
 #languages .language-list1 {
   grid-area: language-list1;
   display: flex;
@@ -393,6 +388,7 @@ ol li {
 ul li {
   font-family: parrafos;
   color: white;
+  list-style: none;
 }
 
 .our-clients, .serviceslist-container .service-pic-mt, .serviceslist-container .service-pic-wl, .serviceslist-container .service-pic-t, .serviceslist-container .service-pic-s, .serviceslist-container .service-pic-lt, .serviceslist-container .service-pic-gt, .location-container .our-location, .testimonials-container-home .moreinfo-testimonials, .footer-container .menu-footer, .go-top, .pay-paypal, .contact-footer, .textheadline, .serviceslist-container-home .grid-title, .serviceslist-container-home .grid-translation, .serviceslist-container-home .grid-transcription, .serviceslist-container-home .grid-subtitling, .serviceslist-container-home .grid-viewall {
@@ -934,6 +930,24 @@ ul li {
 
   .description-quote {
     margin: 2rem;
+  }
+}
+@media screen and (max-width: 575px) {
+  /* Home Page */
+  #languages .language-list1 {
+    text-align: center;
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+  #languages .language-list2 {
+    text-align: center;
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+  #languages .language-list3 {
+    text-align: center;
+    padding-bottom: 0;
+    padding-top: 0;
   }
 }
 @media screen and (max-width: 346px) {

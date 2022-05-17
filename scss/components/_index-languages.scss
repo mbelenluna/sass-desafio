@@ -7,12 +7,6 @@
         grid-area: languages-title;
     }
 
-    .languagelist-title {
-        font-weight: bold;
-        padding: $standard-size;
-        color: $main-color;
-    }
-
     .language-list1 {
         grid-area: language-list1;
         display: flex;
@@ -41,4 +35,5 @@
 ul li {
     font-family: parrafos;
     color: $light;
+    list-style: none;
 }

@@ -934,9 +934,6 @@ ul li {
 }
 @media screen and (max-width: 575px) {
   /* Home Page */
-  #languages {
-    overflow: hidden;
-  }
   #languages .language-list1 {
     text-align: center;
     padding-bottom: 0;

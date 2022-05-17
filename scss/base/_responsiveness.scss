@@ -186,10 +186,14 @@
     }
 
     .testimonials-container {
-
-        .quotation-marks {
-            width: 40px;
-        }
+        grid-template-areas: 
+        "test-1"
+        "test-2"
+        "test-3"
+        "test-4"
+        "test-5"
+        "test-6";
+        grid-template-columns: 80%;
     }
 
     .img-carrousel {
@@ -203,14 +207,13 @@
         grid-template-areas:
         "title-form"
         "form"
-        "description-quote" !important;
-        grid-template-columns: 100% !important;
+        "description-quote";
+        grid-template-columns: 100%;
         justify-content: center;
     }
 
     .description-quote {
         margin: 2rem;
-        padding-right: 0;
     } 
 }
 
@@ -248,24 +251,10 @@
 
     .form-row textarea {
         min-height: 45px;
-        min-width: 100%;
     }
 
     .form-row {
         min-height: 45px;
-        min-width: 100%;
-    }
-
-    #contact {
-        .contact-form {
-            width: 100%;
-        }
-    }
-
-
-    #file {
-        word-wrap: break-word;
-        font-size: xx-small;
     }
 
     .form-submission {

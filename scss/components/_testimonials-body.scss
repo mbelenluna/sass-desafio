@@ -6,13 +6,10 @@
     text-align: center;
     display: grid;
     grid-template-areas: 
-    "test-1"
-    "test-2"
-    "image1"
-    "test-3"
-    "test-4"
-    "image2";
-    grid-template-columns: 70%;
+    "test-1 test-2"
+    "test-3 test-4"
+    "test-5 test-6";
+    grid-template-columns: 40% 40%;
     justify-content: center;
 
     #test-1 {
@@ -31,6 +28,14 @@
         grid-area: test-4;
     }
 
+    #test-5 {
+        grid-area: test-5;
+    }
+
+    #test-6 {
+        grid-area: test-6;
+    }
+
     .testimonial {
         font-family: testimonials;
         margin: map-get($testimonial, margin-testimonial);
@@ -39,33 +44,20 @@
         border: 2px solid $third-color;
         border-radius: 20px;
         background-color: $light;
-
-        .quotation-marks {
-            width: 3rem;
-        }
     }
 
-    .image-testimonial {
-        width: 40%;
-    }
-    
-    .image-testimonial1 {
-        grid-area: image1;
-    }
-    
-    .image-testimonial2 {
-        grid-area: image2;
+    .name-testimonial {
+        color: $dark;
     }
 }
 
 .our-clients {
     @extend %flex;
-    flex-direction: row;
-
 
     #carouselExampleSlidesOnly {
-        height: 223px;
-        width: 226px;
+        height: 220px;
+        width: 220px;
+        text-align: center;
     }
 }
 

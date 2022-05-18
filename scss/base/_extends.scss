@@ -1,5 +1,20 @@
+@import 'variables';
+
 %flex {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+%menuitem {
+    margin: $standard-size;
+    white-space: nowrap;
+}
+
+%menu {
+    display: grid;
+    grid-template-areas: 
+    "menuitem1 menuitem2 menuitem3 menuitem4 menuitem5 menuitem6";
+    align-items: center;
+    justify-content: space-between;
 }

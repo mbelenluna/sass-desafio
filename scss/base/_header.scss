@@ -2,7 +2,6 @@
 
 #header {
     height: auto;
-    position: sticky;
     width: 100%;
     z-index: 1;
 
@@ -13,44 +12,38 @@
 
         #menuitem1 {
             grid-area: menuitem1;
-            margin: $standard-size;
-            white-space: nowrap;
+            @extend %menuitem;
         }
         
         #menuitem2 {
             grid-area: menuitem2;
-            margin: $standard-size;
-            white-space: nowrap;
+            @extend %menuitem;
         }
         
         #menuitem3 {
             grid-area: menuitem3;
-            margin: $standard-size;
-            white-space: nowrap;
+            @extend %menuitem;
         }
         
         #menuitem4 {
             grid-area: menuitem4;
-            margin: $standard-size;
-            white-space: nowrap;
+            @extend %menuitem;
         }
         
         #menuitem5 {
             grid-area: menuitem5;
-            margin: $standard-size;
-            white-space: nowrap;
+            @extend %menuitem;
         }
         
         #menuitem6 a {
             grid-area: menuitem6;
-            margin: $standard-size;
             background-color: $secondary-color;
             border-radius: 6px;
             padding: 10px;
             color: $light;
             font-family: parrafos;
             font-weight: bolder;
-            white-space: nowrap;
+            @extend %menuitem;
 
             &:hover {
                 transition: all .5s;
@@ -59,12 +52,6 @@
             }
         }
 
-        .logo-style {
-            font-size: 1.5rem;
-            text-shadow: -1px 0 $dark, 0 1px $third-color, 1px 0 $third-color, 0 -1px $third-color;
-            padding: 1rem;
-        }
-        
         .menu-item {
             font-family: parrafos;
             font-weight: bold;
@@ -100,12 +87,14 @@
         }
     }
 
+    .logo-style {
+        font-size: 1.5rem;
+        text-shadow: -1px 0 $dark, 0 1px $third-color, 1px 0 $third-color, 0 -1px $third-color;
+        padding: 1rem;
+    }
+
     .menu-items {
-        display: grid;
-        grid-template-areas: 
-        "menuitem1 menuitem2 menuitem3 menuitem4 menuitem5 menuitem6";
-        align-items: center;
-        justify-content: space-between;
+        @extend %menu;
 
         a {
             color: $light;
@@ -113,11 +102,7 @@
     }
 
     .menu-items2 {
-        display: grid;
-        grid-template-areas: 
-        "menuitem1 menuitem2 menuitem3 menuitem4 menuitem5 menuitem6";
-        align-items: center;
-        justify-content: space-between;
+        @extend %menu;
 
         a {
             color: $dark;

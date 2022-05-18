@@ -47,8 +47,7 @@ h2 {
   font-family: titulos2;
   color: #1b74bc;
   text-align: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px 0;
 }
 
 h3 {
@@ -81,7 +80,6 @@ ol li {
 
 #header {
   height: auto;
-  position: sticky;
   width: 100%;
   z-index: 1;
 }
@@ -92,49 +90,32 @@ ol li {
 }
 #header .menu #menuitem1 {
   grid-area: menuitem1;
-  margin: 1rem;
-  white-space: nowrap;
 }
 #header .menu #menuitem2 {
   grid-area: menuitem2;
-  margin: 1rem;
-  white-space: nowrap;
 }
 #header .menu #menuitem3 {
   grid-area: menuitem3;
-  margin: 1rem;
-  white-space: nowrap;
 }
 #header .menu #menuitem4 {
   grid-area: menuitem4;
-  margin: 1rem;
-  white-space: nowrap;
 }
 #header .menu #menuitem5 {
   grid-area: menuitem5;
-  margin: 1rem;
-  white-space: nowrap;
 }
 #header .menu #menuitem6 a {
   grid-area: menuitem6;
-  margin: 1rem;
   background-color: #1762b9;
   border-radius: 6px;
   padding: 10px;
   color: white;
   font-family: parrafos;
   font-weight: bolder;
-  white-space: nowrap;
 }
 #header .menu #menuitem6 a:hover {
   transition: all 0.5s;
   color: white;
   background-color: black;
-}
-#header .menu .logo-style {
-  font-size: 1.5rem;
-  text-shadow: -1px 0 black, 0 1px lavender, 1px 0 lavender, 0 -1px lavender;
-  padding: 1rem;
 }
 #header .menu .menu-item {
   font-family: parrafos;
@@ -165,20 +146,13 @@ ol li {
   text-align: center;
   padding: 10px;
 }
-#header .menu-items {
-  display: grid;
-  grid-template-areas: "menuitem1 menuitem2 menuitem3 menuitem4 menuitem5 menuitem6";
-  align-items: center;
-  justify-content: space-between;
+#header .logo-style {
+  font-size: 1.5rem;
+  text-shadow: -1px 0 black, 0 1px lavender, 1px 0 lavender, 0 -1px lavender;
+  padding: 1rem;
 }
 #header .menu-items a {
   color: white;
-}
-#header .menu-items2 {
-  display: grid;
-  grid-template-areas: "menuitem1 menuitem2 menuitem3 menuitem4 menuitem5 menuitem6";
-  align-items: center;
-  justify-content: space-between;
 }
 #header .menu-items2 a {
   color: black;
@@ -187,17 +161,29 @@ ol li {
   display: none;
 }
 
-.our-clients, .serviceslist-container .service-pic-mt, .serviceslist-container .service-pic-wl, .serviceslist-container .service-pic-t, .serviceslist-container .service-pic-s, .serviceslist-container .service-pic-lt, .serviceslist-container .service-pic-gt, .location-container .our-location, .testimonials-container-home .moreinfo-testimonials, .serviceslist-container-home .grid-viewall, .serviceslist-container-home .grid-subtitling, .serviceslist-container-home .grid-transcription, .serviceslist-container-home .grid-translation, .serviceslist-container-home .grid-title, .textheadline, .contact-footer, .pay-paypal, .go-top, .footer-container .menu-footer {
+.our-clients, .serviceslist-container .service-pic-mt, .serviceslist-container .service-pic-wl, .serviceslist-container .service-pic-t, .serviceslist-container .service-pic-s, .serviceslist-container .service-pic-lt, .serviceslist-container .service-pic-gt, .location-container .our-location, .testimonials-container-home .moreinfo-testimonials, .serviceslist-container-home .grid-viewall, .serviceslist-container-home .grid-subtitling, .serviceslist-container-home .grid-transcription, .serviceslist-container-home .grid-translation, .serviceslist-container-home .grid-title, .headline .textheadline, .contact-footer, .pay-paypal, .go-top, .footer-container .menu-footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#header .menu #menuitem1, #header .menu #menuitem2, #header .menu #menuitem3, #header .menu #menuitem4, #header .menu #menuitem5, #header .menu #menuitem6 a {
+  margin: 1rem;
+  white-space: nowrap;
+}
+
+#header .menu-items, #header .menu-items2 {
+  display: grid;
+  grid-template-areas: "menuitem1 menuitem2 menuitem3 menuitem4 menuitem5 menuitem6";
+  align-items: center;
+  justify-content: space-between;
 }
 
 .footer-container {
   display: grid;
   grid-template-areas: "menu go-top contact-footer" "menu pay-paypal contact-footer";
   grid-template-columns: repeat(3, fr);
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: repeat(2, fr);
   background-color: black;
 }
 .footer-container .menu-footer {
@@ -255,37 +241,46 @@ ol li {
   padding-bottom: 10px;
 }
 
-.our-clients, .serviceslist-container .service-pic-mt, .serviceslist-container .service-pic-wl, .serviceslist-container .service-pic-t, .serviceslist-container .service-pic-s, .serviceslist-container .service-pic-lt, .serviceslist-container .service-pic-gt, .location-container .our-location, .testimonials-container-home .moreinfo-testimonials, .serviceslist-container-home .grid-viewall, .serviceslist-container-home .grid-subtitling, .serviceslist-container-home .grid-transcription, .serviceslist-container-home .grid-translation, .serviceslist-container-home .grid-title, .textheadline, .footer-container .menu-footer, .go-top, .pay-paypal, .contact-footer {
+.our-clients, .serviceslist-container .service-pic-mt, .serviceslist-container .service-pic-wl, .serviceslist-container .service-pic-t, .serviceslist-container .service-pic-s, .serviceslist-container .service-pic-lt, .serviceslist-container .service-pic-gt, .location-container .our-location, .testimonials-container-home .moreinfo-testimonials, .serviceslist-container-home .grid-viewall, .serviceslist-container-home .grid-subtitling, .serviceslist-container-home .grid-transcription, .serviceslist-container-home .grid-translation, .serviceslist-container-home .grid-title, .headline .textheadline, .footer-container .menu-footer, .go-top, .pay-paypal, .contact-footer {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+#header .menu #menuitem1, #header .menu #menuitem2, #header .menu #menuitem3, #header .menu #menuitem4, #header .menu #menuitem5, #header .menu #menuitem6 a {
+  margin: 1rem;
+  white-space: nowrap;
+}
+
+#header .menu-items, #header .menu-items2 {
+  display: grid;
+  grid-template-areas: "menuitem1 menuitem2 menuitem3 menuitem4 menuitem5 menuitem6";
+  align-items: center;
+  justify-content: space-between;
+}
+
 .headline {
   background-size: cover;
   padding: 12rem 3rem;
+  width: 100%;
 }
-
-.back-video {
+.headline .textheadline {
+  flex-direction: column;
+}
+.headline .textheadline .back-video {
   position: absolute;
   right: 0;
   bottom: 0;
   z-index: -1;
 }
-
-.title-headline {
+.headline .textheadline .title-headline {
   grid-area: title-headline;
 }
-
-.welcome-text {
+.headline .textheadline .welcome-text {
   grid-area: welcome;
   text-align: center;
   font-weight: bold;
   color: white;
-}
-
-.textheadline {
-  flex-direction: column;
 }
 
 .button {
@@ -313,10 +308,22 @@ ol li {
   transition: all 0.5s;
 }
 
-.our-clients, .serviceslist-container .service-pic-mt, .serviceslist-container .service-pic-wl, .serviceslist-container .service-pic-t, .serviceslist-container .service-pic-s, .serviceslist-container .service-pic-lt, .serviceslist-container .service-pic-gt, .location-container .our-location, .testimonials-container-home .moreinfo-testimonials, .serviceslist-container-home .grid-viewall, .serviceslist-container-home .grid-subtitling, .serviceslist-container-home .grid-transcription, .serviceslist-container-home .grid-translation, .serviceslist-container-home .grid-title, .footer-container .menu-footer, .go-top, .pay-paypal, .contact-footer, .textheadline {
+.our-clients, .serviceslist-container .service-pic-mt, .serviceslist-container .service-pic-wl, .serviceslist-container .service-pic-t, .serviceslist-container .service-pic-s, .serviceslist-container .service-pic-lt, .serviceslist-container .service-pic-gt, .location-container .our-location, .testimonials-container-home .moreinfo-testimonials, .serviceslist-container-home .grid-viewall, .serviceslist-container-home .grid-subtitling, .serviceslist-container-home .grid-transcription, .serviceslist-container-home .grid-translation, .serviceslist-container-home .grid-title, .footer-container .menu-footer, .go-top, .pay-paypal, .contact-footer, .headline .textheadline {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#header .menu #menuitem1, #header .menu #menuitem2, #header .menu #menuitem3, #header .menu #menuitem4, #header .menu #menuitem5, #header .menu #menuitem6 a {
+  margin: 1rem;
+  white-space: nowrap;
+}
+
+#header .menu-items, #header .menu-items2 {
+  display: grid;
+  grid-template-areas: "menuitem1 menuitem2 menuitem3 menuitem4 menuitem5 menuitem6";
+  align-items: center;
+  justify-content: space-between;
 }
 
 #services {
@@ -326,7 +333,7 @@ ol li {
 .serviceslist-container-home {
   display: grid;
   grid-template-areas: "title title title" "translation transcription subtitling" "viewall viewall viewall";
-  width: auto;
+  width: 100%;
   grid-template-columns: repeat(3, fr);
   grid-template-rows: auto;
   justify-content: center;
@@ -359,6 +366,7 @@ ol li {
 
 #languages {
   background-color: black;
+  width: 100%;
 }
 #languages .languages-title {
   grid-area: languages-title;
@@ -391,10 +399,22 @@ ul li {
   list-style: none;
 }
 
-.our-clients, .serviceslist-container .service-pic-mt, .serviceslist-container .service-pic-wl, .serviceslist-container .service-pic-t, .serviceslist-container .service-pic-s, .serviceslist-container .service-pic-lt, .serviceslist-container .service-pic-gt, .location-container .our-location, .testimonials-container-home .moreinfo-testimonials, .footer-container .menu-footer, .go-top, .pay-paypal, .contact-footer, .textheadline, .serviceslist-container-home .grid-title, .serviceslist-container-home .grid-translation, .serviceslist-container-home .grid-transcription, .serviceslist-container-home .grid-subtitling, .serviceslist-container-home .grid-viewall {
+.our-clients, .serviceslist-container .service-pic-mt, .serviceslist-container .service-pic-wl, .serviceslist-container .service-pic-t, .serviceslist-container .service-pic-s, .serviceslist-container .service-pic-lt, .serviceslist-container .service-pic-gt, .location-container .our-location, .testimonials-container-home .moreinfo-testimonials, .footer-container .menu-footer, .go-top, .pay-paypal, .contact-footer, .headline .textheadline, .serviceslist-container-home .grid-title, .serviceslist-container-home .grid-translation, .serviceslist-container-home .grid-transcription, .serviceslist-container-home .grid-subtitling, .serviceslist-container-home .grid-viewall {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#header .menu #menuitem1, #header .menu #menuitem2, #header .menu #menuitem3, #header .menu #menuitem4, #header .menu #menuitem5, #header .menu #menuitem6 a {
+  margin: 1rem;
+  white-space: nowrap;
+}
+
+#header .menu-items, #header .menu-items2 {
+  display: grid;
+  grid-template-areas: "menuitem1 menuitem2 menuitem3 menuitem4 menuitem5 menuitem6";
+  align-items: center;
+  justify-content: space-between;
 }
 
 .testimonials-container-home {
@@ -660,10 +680,22 @@ ul li {
   padding: 5rem 3rem;
 }
 
-.our-clients, .footer-container .menu-footer, .go-top, .pay-paypal, .contact-footer, .textheadline, .serviceslist-container-home .grid-title, .serviceslist-container-home .grid-translation, .serviceslist-container-home .grid-transcription, .serviceslist-container-home .grid-subtitling, .serviceslist-container-home .grid-viewall, .testimonials-container-home .moreinfo-testimonials, .location-container .our-location, .serviceslist-container .service-pic-gt, .serviceslist-container .service-pic-lt, .serviceslist-container .service-pic-s, .serviceslist-container .service-pic-t, .serviceslist-container .service-pic-wl, .serviceslist-container .service-pic-mt {
+.our-clients, .footer-container .menu-footer, .go-top, .pay-paypal, .contact-footer, .headline .textheadline, .serviceslist-container-home .grid-title, .serviceslist-container-home .grid-translation, .serviceslist-container-home .grid-transcription, .serviceslist-container-home .grid-subtitling, .serviceslist-container-home .grid-viewall, .testimonials-container-home .moreinfo-testimonials, .location-container .our-location, .serviceslist-container .service-pic-gt, .serviceslist-container .service-pic-lt, .serviceslist-container .service-pic-s, .serviceslist-container .service-pic-t, .serviceslist-container .service-pic-wl, .serviceslist-container .service-pic-mt {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#header .menu #menuitem1, #header .menu #menuitem2, #header .menu #menuitem3, #header .menu #menuitem4, #header .menu #menuitem5, #header .menu #menuitem6 a {
+  margin: 1rem;
+  white-space: nowrap;
+}
+
+#header .menu-items, #header .menu-items2 {
+  display: grid;
+  grid-template-areas: "menuitem1 menuitem2 menuitem3 menuitem4 menuitem5 menuitem6";
+  align-items: center;
+  justify-content: space-between;
 }
 
 #body-ourprocess {
@@ -707,10 +739,22 @@ ul li {
   grid-template-areas: "title-headline" "welcome-text";
 }
 
-.our-clients, .footer-container .menu-footer, .go-top, .pay-paypal, .contact-footer, .textheadline, .serviceslist-container-home .grid-title, .serviceslist-container-home .grid-translation, .serviceslist-container-home .grid-transcription, .serviceslist-container-home .grid-subtitling, .serviceslist-container-home .grid-viewall, .testimonials-container-home .moreinfo-testimonials, .location-container .our-location, .serviceslist-container .service-pic-gt, .serviceslist-container .service-pic-lt, .serviceslist-container .service-pic-s, .serviceslist-container .service-pic-t, .serviceslist-container .service-pic-wl, .serviceslist-container .service-pic-mt {
+.our-clients, .footer-container .menu-footer, .go-top, .pay-paypal, .contact-footer, .headline .textheadline, .serviceslist-container-home .grid-title, .serviceslist-container-home .grid-translation, .serviceslist-container-home .grid-transcription, .serviceslist-container-home .grid-subtitling, .serviceslist-container-home .grid-viewall, .testimonials-container-home .moreinfo-testimonials, .location-container .our-location, .serviceslist-container .service-pic-gt, .serviceslist-container .service-pic-lt, .serviceslist-container .service-pic-s, .serviceslist-container .service-pic-t, .serviceslist-container .service-pic-wl, .serviceslist-container .service-pic-mt {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#header .menu #menuitem1, #header .menu #menuitem2, #header .menu #menuitem3, #header .menu #menuitem4, #header .menu #menuitem5, #header .menu #menuitem6 a {
+  margin: 1rem;
+  white-space: nowrap;
+}
+
+#header .menu-items, #header .menu-items2 {
+  display: grid;
+  grid-template-areas: "menuitem1 menuitem2 menuitem3 menuitem4 menuitem5 menuitem6";
+  align-items: center;
+  justify-content: space-between;
 }
 
 .testimonials-container {
@@ -757,10 +801,40 @@ ul li {
   text-align: center;
 }
 
-.footer-container .menu-footer, .go-top, .pay-paypal, .contact-footer, .textheadline, .serviceslist-container-home .grid-title, .serviceslist-container-home .grid-translation, .serviceslist-container-home .grid-transcription, .serviceslist-container-home .grid-subtitling, .serviceslist-container-home .grid-viewall, .testimonials-container-home .moreinfo-testimonials, .location-container .our-location, .serviceslist-container .service-pic-gt, .serviceslist-container .service-pic-lt, .serviceslist-container .service-pic-s, .serviceslist-container .service-pic-t, .serviceslist-container .service-pic-wl, .serviceslist-container .service-pic-mt, .our-clients {
+.footer-container .menu-footer, .go-top, .pay-paypal, .contact-footer, .headline .textheadline, .serviceslist-container-home .grid-title, .serviceslist-container-home .grid-translation, .serviceslist-container-home .grid-transcription, .serviceslist-container-home .grid-subtitling, .serviceslist-container-home .grid-viewall, .testimonials-container-home .moreinfo-testimonials, .location-container .our-location, .serviceslist-container .service-pic-gt, .serviceslist-container .service-pic-lt, .serviceslist-container .service-pic-s, .serviceslist-container .service-pic-t, .serviceslist-container .service-pic-wl, .serviceslist-container .service-pic-mt, .our-clients {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#header .menu #menuitem1, #header .menu #menuitem2, #header .menu #menuitem3, #header .menu #menuitem4, #header .menu #menuitem5, #header .menu #menuitem6 a {
+  margin: 1rem;
+  white-space: nowrap;
+}
+
+#header .menu-items, #header .menu-items2 {
+  display: grid;
+  grid-template-areas: "menuitem1 menuitem2 menuitem3 menuitem4 menuitem5 menuitem6";
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-container .menu-footer, .go-top, .pay-paypal, .contact-footer, .headline .textheadline, .serviceslist-container-home .grid-title, .serviceslist-container-home .grid-translation, .serviceslist-container-home .grid-transcription, .serviceslist-container-home .grid-subtitling, .serviceslist-container-home .grid-viewall, .testimonials-container-home .moreinfo-testimonials, .location-container .our-location, .serviceslist-container .service-pic-gt, .serviceslist-container .service-pic-lt, .serviceslist-container .service-pic-s, .serviceslist-container .service-pic-t, .serviceslist-container .service-pic-wl, .serviceslist-container .service-pic-mt, .our-clients {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#header .menu #menuitem1, #header .menu #menuitem2, #header .menu #menuitem3, #header .menu #menuitem4, #header .menu #menuitem5, #header .menu #menuitem6 a {
+  margin: 1rem;
+  white-space: nowrap;
+}
+
+#header .menu-items, #header .menu-items2 {
+  display: grid;
+  grid-template-areas: "menuitem1 menuitem2 menuitem3 menuitem4 menuitem5 menuitem6";
+  align-items: center;
+  justify-content: space-between;
 }
 
 /* MEDIA QUERIES */

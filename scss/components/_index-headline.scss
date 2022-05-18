@@ -5,29 +5,30 @@
 .headline {
     background-size: cover;
     padding: 12rem 3rem;
-}
+    width: 100%;
 
-.back-video {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-}
+    .textheadline {
+        flex-direction: column;
+        @extend %flex;
 
-.title-headline {
-    grid-area: title-headline;
-}
-
-.welcome-text {
-    grid-area: welcome;
-    text-align: center;
-    font-weight: bold;
-    color: $light;
-}
-
-.textheadline {
-    flex-direction: column;
-    @extend %flex;
+        .back-video {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+        }
+    
+        .title-headline {
+            grid-area: title-headline;
+        }
+    
+        .welcome-text {
+            grid-area: welcome;
+            text-align: center;
+            font-weight: bold;
+            color: $light;
+        }
+    }    
 }
 
 .button {

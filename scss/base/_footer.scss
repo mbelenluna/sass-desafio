@@ -7,7 +7,7 @@
     "menu go-top contact-footer"
     "menu pay-paypal contact-footer";
     grid-template-columns: repeat(3,fr);
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: repeat(2,fr);
     background-color: $dark;
 
     .menu-footer {
@@ -63,7 +63,7 @@
 }
 
 .contact-footer {
-    padding: 1rem 0;
+    padding: $standard-size 0;
     grid-area: contact-footer;
     @extend %flex;
     flex-direction: column;

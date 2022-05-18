@@ -89,6 +89,7 @@ ol li {
   height: auto;
   width: 100%;
   z-index: 1;
+  background-color: black;
 }
 #header .menu {
   display: flex;

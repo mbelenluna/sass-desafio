@@ -270,6 +270,7 @@ ol li {
   background-size: cover;
   padding: 12rem 3rem;
   width: 100%;
+  background-color: black;
 }
 .headline .textheadline {
   flex-direction: column;

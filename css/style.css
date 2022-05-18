@@ -78,6 +78,13 @@ ol li {
   font-family: parrafos;
 }
 
+.welcome-text {
+  grid-area: welcome;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+}
+
 #header {
   height: auto;
   width: 100%;
@@ -275,12 +282,6 @@ ol li {
 }
 .headline .textheadline .title-headline {
   grid-area: title-headline;
-}
-.headline .textheadline .welcome-text {
-  grid-area: welcome;
-  text-align: center;
-  font-weight: bold;
-  color: white;
 }
 
 .button {

@@ -21,15 +21,8 @@
         .title-headline {
             grid-area: title-headline;
         }
-    
-        .welcome-text {
-            grid-area: welcome;
-            text-align: center;
-            font-weight: bold;
-            color: $light;
-        }
-    }    
-}
+    }
+}    
 
 .button {
     font-family: links;

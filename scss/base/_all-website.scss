@@ -84,3 +84,10 @@ a {
 ol li {
     font-family: parrafos;
 }
+
+.welcome-text {
+    grid-area: welcome;
+    text-align: center;
+    font-weight: bold;
+    color: $light;
+}

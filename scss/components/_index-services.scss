@@ -25,24 +25,21 @@
         grid-area: translation;
         @extend %flex;
         flex-direction: column;
-        margin-right: 2rem;
-        margin-left: 2rem;
+        margin: 0 2rem;
     }
     
     .grid-transcription {
         grid-area: transcription;
         @extend %flex;
         flex-direction: column;
-        margin-right: 2rem;
-        margin-left: 2rem;
+        margin: 0 2rem;
     }
     
     .grid-subtitling {
         grid-area: subtitling;
         @extend %flex;
         flex-direction: column;
-        margin-right: 2rem;
-        margin-left: 2rem;
+        margin: 0 2rem;
     }
     
     .grid-viewall {

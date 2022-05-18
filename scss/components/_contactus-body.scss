@@ -13,11 +13,9 @@
 
     .title-form {
         grid-area: title-form;
-        text-align: center;
-        margin: 1rem;
+        @include alignment(center, 10px, $standard-size);
         border-radius: 3px;
         border: 1px solid $third-color;
-        padding: 10px;
     }
     
     .contact-form {
@@ -35,7 +33,7 @@
             justify-content: flex-start;
             flex-direction: column;
             flex-wrap: wrap;
-            padding: 0.5rem 0 0.5rem 0;
+            padding: 0.5rem 0;
             min-width: 100%;
         }
 

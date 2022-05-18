@@ -18,3 +18,10 @@
     align-items: center;
     justify-content: space-between;
 }
+
+%language {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: $standard-size;
+}

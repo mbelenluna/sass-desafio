@@ -10,26 +10,17 @@
 
     .language-list1 {
         grid-area: language-list1;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: $standard-size;
+        @extend %language;
     }
     
     .language-list2 {
         grid-area: language-list2;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: $standard-size;
+        @extend %language;
     }
     
     .language-list3 {
         grid-area: language-list3;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: $standard-size;
+        @extend %language;
     }
 }
 

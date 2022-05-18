@@ -89,7 +89,6 @@ ol li {
   height: auto;
   width: 100%;
   z-index: 1;
-  background-color: black;
 }
 #header .menu {
   display: flex;
@@ -187,6 +186,13 @@ ol li {
   justify-content: space-between;
 }
 
+#languages .language-list3, #languages .language-list2, #languages .language-list1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
 .footer-container {
   display: grid;
   grid-template-areas: "menu go-top contact-footer" "menu pay-paypal contact-footer";
@@ -267,6 +273,13 @@ ol li {
   justify-content: space-between;
 }
 
+#languages .language-list3, #languages .language-list2, #languages .language-list1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
 .headline {
   background-size: cover;
   padding: 12rem 3rem;
@@ -329,6 +342,13 @@ ol li {
   justify-content: space-between;
 }
 
+#languages .language-list3, #languages .language-list2, #languages .language-list1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
 #services {
   background-color: white;
 }
@@ -347,20 +367,17 @@ ol li {
 .serviceslist-container-home .grid-translation {
   grid-area: translation;
   flex-direction: column;
-  margin-right: 2rem;
-  margin-left: 2rem;
+  margin: 0 2rem;
 }
 .serviceslist-container-home .grid-transcription {
   grid-area: transcription;
   flex-direction: column;
-  margin-right: 2rem;
-  margin-left: 2rem;
+  margin: 0 2rem;
 }
 .serviceslist-container-home .grid-subtitling {
   grid-area: subtitling;
   flex-direction: column;
-  margin-right: 2rem;
-  margin-left: 2rem;
+  margin: 0 2rem;
 }
 .serviceslist-container-home .grid-viewall {
   grid-area: viewall;
@@ -376,24 +393,12 @@ ol li {
 }
 #languages .language-list1 {
   grid-area: language-list1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1rem;
 }
 #languages .language-list2 {
   grid-area: language-list2;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1rem;
 }
 #languages .language-list3 {
   grid-area: language-list3;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1rem;
 }
 
 ul li {
@@ -418,6 +423,13 @@ ul li {
   grid-template-areas: "menuitem1 menuitem2 menuitem3 menuitem4 menuitem5 menuitem6";
   align-items: center;
   justify-content: space-between;
+}
+
+#languages .language-list1, #languages .language-list2, #languages .language-list3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
 }
 
 .testimonials-container-home {
@@ -541,10 +553,10 @@ ul li {
 #contact .title-form {
   grid-area: title-form;
   text-align: center;
+  padding: 10px;
   margin: 1rem;
   border-radius: 3px;
   border: 1px solid lavender;
-  padding: 10px;
 }
 #contact .contact-form {
   background-color: lavender;
@@ -561,7 +573,7 @@ ul li {
   justify-content: flex-start;
   flex-direction: column;
   flex-wrap: wrap;
-  padding: 0.5rem 0 0.5rem 0;
+  padding: 0.5rem 0;
   min-width: 100%;
 }
 #contact .contact-form .form-row input[type=text] {
@@ -701,6 +713,13 @@ ul li {
   justify-content: space-between;
 }
 
+#languages .language-list1, #languages .language-list2, #languages .language-list3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
 #body-ourprocess {
   margin: 2rem;
   text-align: justify;
@@ -758,6 +777,13 @@ ul li {
   grid-template-areas: "menuitem1 menuitem2 menuitem3 menuitem4 menuitem5 menuitem6";
   align-items: center;
   justify-content: space-between;
+}
+
+#languages .language-list1, #languages .language-list2, #languages .language-list3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
 }
 
 .testimonials-container {
@@ -822,6 +848,13 @@ ul li {
   justify-content: space-between;
 }
 
+#languages .language-list1, #languages .language-list2, #languages .language-list3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
 .footer-container .menu-footer, .go-top, .pay-paypal, .contact-footer, .headline .textheadline, .serviceslist-container-home .grid-title, .serviceslist-container-home .grid-translation, .serviceslist-container-home .grid-transcription, .serviceslist-container-home .grid-subtitling, .serviceslist-container-home .grid-viewall, .testimonials-container-home .moreinfo-testimonials, .location-container .our-location, .serviceslist-container .service-pic-gt, .serviceslist-container .service-pic-lt, .serviceslist-container .service-pic-s, .serviceslist-container .service-pic-t, .serviceslist-container .service-pic-wl, .serviceslist-container .service-pic-mt, .our-clients {
   display: flex;
   justify-content: center;
@@ -838,6 +871,13 @@ ul li {
   grid-template-areas: "menuitem1 menuitem2 menuitem3 menuitem4 menuitem5 menuitem6";
   align-items: center;
   justify-content: space-between;
+}
+
+#languages .language-list1, #languages .language-list2, #languages .language-list3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
 }
 
 /* MEDIA QUERIES */

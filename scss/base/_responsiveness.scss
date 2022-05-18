@@ -331,6 +331,7 @@
     "sometestimonials"
     "footer";
     grid-template-rows: repeat(6,auto);
+    background-color: $dark;
     overflow-x: hidden;
 }
 
@@ -352,6 +353,7 @@
 
 #sometestimonials {
     grid-area: sometestimonials;
+    background-color: $light;
 }
 
 #footer {

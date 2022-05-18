@@ -1093,6 +1093,7 @@ ul li {
   display: grid;
   grid-template-areas: "header" "headline" "services" "languages" "sometestimonials" "footer";
   grid-template-rows: repeat(6, auto);
+  background-color: black;
   overflow-x: hidden;
 }
 
@@ -1114,6 +1115,7 @@ ul li {
 
 #sometestimonials {
   grid-area: sometestimonials;
+  background-color: white;
 }
 
 #footer {

@@ -154,9 +154,11 @@ ol li {
   padding: 10px;
 }
 #header .logo-style {
+  font-family: titulos3;
   font-size: 1.5rem;
   text-shadow: -1px 0 black, 0 1px lavender, 1px 0 lavender, 0 -1px lavender;
   padding: 1rem;
+  color: #1b74bc;
 }
 #header .menu-items a {
   color: white;
@@ -828,6 +830,39 @@ ul li {
   height: 220px;
   width: 220px;
   text-align: center;
+}
+
+.footer-container .menu-footer, .go-top, .pay-paypal, .contact-footer, .headline .textheadline, .serviceslist-container-home .grid-title, .serviceslist-container-home .grid-translation, .serviceslist-container-home .grid-transcription, .serviceslist-container-home .grid-subtitling, .serviceslist-container-home .grid-viewall, .testimonials-container-home .moreinfo-testimonials, .location-container .our-location, .serviceslist-container .service-pic-gt, .serviceslist-container .service-pic-lt, .serviceslist-container .service-pic-s, .serviceslist-container .service-pic-t, .serviceslist-container .service-pic-wl, .serviceslist-container .service-pic-mt, .our-clients {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#header .menu #menuitem1, #header .menu #menuitem2, #header .menu #menuitem3, #header .menu #menuitem4, #header .menu #menuitem5, #header .menu #menuitem6 a {
+  margin: 1rem;
+  white-space: nowrap;
+}
+
+#header .menu-items, #header .menu-items2 {
+  display: grid;
+  grid-template-areas: "menuitem1 menuitem2 menuitem3 menuitem4 menuitem5 menuitem6";
+  align-items: center;
+  justify-content: space-between;
+}
+
+#languages .language-list1, #languages .language-list2, #languages .language-list3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+.thank-you {
+  text-align: center;
+}
+
+.our-office {
+  max-width: 100%;
 }
 
 .footer-container .menu-footer, .go-top, .pay-paypal, .contact-footer, .headline .textheadline, .serviceslist-container-home .grid-title, .serviceslist-container-home .grid-translation, .serviceslist-container-home .grid-transcription, .serviceslist-container-home .grid-subtitling, .serviceslist-container-home .grid-viewall, .testimonials-container-home .moreinfo-testimonials, .location-container .our-location, .serviceslist-container .service-pic-gt, .serviceslist-container .service-pic-lt, .serviceslist-container .service-pic-s, .serviceslist-container .service-pic-t, .serviceslist-container .service-pic-wl, .serviceslist-container .service-pic-mt, .our-clients {

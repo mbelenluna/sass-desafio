@@ -25,7 +25,7 @@
         grid-area: translation;
         @extend %flex;
         flex-direction: column;
-        margin: 1rem 2rem;
+        margin: 0 2rem 1rem 2rem;
     }
     
     .grid-transcription {
@@ -39,7 +39,7 @@
         grid-area: subtitling;
         @extend %flex;
         flex-direction: column;
-        margin: 1rem 2rem;
+        margin: 1rem 2rem 0 2rem;
     }
     
     .grid-viewall {

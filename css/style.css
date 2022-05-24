@@ -369,7 +369,7 @@ ol li {
 .serviceslist-container-home .grid-translation {
   grid-area: translation;
   flex-direction: column;
-  margin: 1rem 2rem;
+  margin: 0 2rem 1rem 2rem;
 }
 .serviceslist-container-home .grid-transcription {
   grid-area: transcription;
@@ -379,7 +379,7 @@ ol li {
 .serviceslist-container-home .grid-subtitling {
   grid-area: subtitling;
   flex-direction: column;
-  margin: 1rem 2rem;
+  margin: 1rem 2rem 0 2rem;
 }
 .serviceslist-container-home .grid-viewall {
   grid-area: viewall;

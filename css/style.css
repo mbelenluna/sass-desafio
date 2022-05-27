@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 .disclaimer {
   display: none;
 }
@@ -474,7 +478,6 @@ ul li {
   grid-template-areas: "aboutus-photo1 aboutus-paragraph1" "aboutus-paragraph2 aboutus-photo2";
   grid-template-columns: 40% 40%;
   justify-content: center;
-  overflow: hidden;
 }
 .aboutus-container .aboutus-photo1 {
   grid-area: aboutus-photo1;
@@ -631,7 +634,6 @@ ul li {
 .serviceslist-container {
   width: 100%;
   background-color: white;
-  overflow: hidden;
 }
 .serviceslist-container .service-gtranslation {
   text-align: justify;

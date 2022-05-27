@@ -5,6 +5,10 @@
     padding: 0;
 }
 
+html,body {
+    overflow-x: hidden;
+}
+
 .disclaimer {
     display: none;
 }

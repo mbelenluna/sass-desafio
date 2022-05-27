@@ -7,7 +7,6 @@
 .serviceslist-container {
     width: 100%;
     background-color: $light;
-    overflow: hidden;
 
     .service-gtranslation {
         @include alignment(justify, 0, 1rem);

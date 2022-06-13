@@ -6,7 +6,7 @@
     grid-template-areas:
     "menu go-top contact-footer"
     "menu pay-paypal contact-footer";
-    grid-template-columns: repeat(3,fr);
+    grid-template-columns: 33% 33% 33%;
     grid-template-rows: repeat(2,fr);
     background-color: $dark;
 

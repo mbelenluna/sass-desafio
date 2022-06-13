@@ -202,7 +202,7 @@ ol li {
 .footer-container {
   display: grid;
   grid-template-areas: "menu go-top contact-footer" "menu pay-paypal contact-footer";
-  grid-template-columns: repeat(3, fr);
+  grid-template-columns: 33% 33% 33%;
   grid-template-rows: repeat(2, fr);
   background-color: black;
 }
@@ -967,7 +967,7 @@ ul {
   .footer-container {
     display: grid;
     grid-template-areas: "menu go-top" "menu pay-paypal" "menu contact-footer";
-    grid-template-columns: repeat(2, fr);
+    grid-template-columns: 50% 50%;
     grid-template-rows: auto auto auto;
   }
 
